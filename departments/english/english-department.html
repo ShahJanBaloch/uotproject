@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of English - University of Turbat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      brand: {
+                          teal: '#0F4C5C',
+                          darkTeal: '#093642',
+                          gold: '#E0B354',
+                          red: '#9A031E',
+                          sand: '#F5F5F4',
+                          white: '#FFFFFF'
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['Outfit', 'sans-serif'],
+                      serif: ['Playfair Display', 'serif'],
+                  },
+                  animation: {
+                      'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                      'float': 'float 6s ease-in-out infinite',
+                  },
+                  keyframes: {
+                      fadeInUp: {
+                          '0%': { opacity: '0', transform: 'translateY(20px)' },
+                          '100%': { opacity: '1', transform: 'translateY(0)' },
+                      },
+                      float: {
+                          '0%, 100%': { transform: 'translateY(0)' },
+                          '50%': { transform: 'translateY(-10px)' },
+                      }
+                  }
+              }
+          }
+      }
+  </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+      <!-- Geometric Pattern Background (Fixed) -->
+  <div class="fixed inset-0 z-0 opacity-[0.04] pointer-events-none" style="
+    background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    ">
+  </div>
+
+    <!-- Navigation and Mobile Menu overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+
+
+  <!-- Main SECTION -->
+  <section class="py-20 mt-16">
+  
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="container mx-auto px-6">
+                <!-- Section Title -->
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center text-brand-gold">
+                    Faculty of English Literature 
+                </h2>
+                <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+                    Developing strong communication, critical thinking, and literary analysis skills through the study of English language, 
+                    literature, linguistics, 
+                    and creative writing to prepare students for academic and professional success.
+                </p>
+              </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Sidebar Info -->
+                <div class="lg:col-span-4 space-y-8">
+                    
+                    <!-- Stats Card -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                        <h3 class="font-serif text-2xl text-brand-teal mb-6">At a Glance</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center text-brand-gold">
+                                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase tracking-wider">Established</p>
+                                    <p class="font-bold text-lg" id="dept-established">2014</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center text-brand-gold">
+                                    <i data-lucide="users" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase tracking-wider">Students</p>
+                                    <p class="font-bold text-lg" id="dept-students">170+</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center text-brand-gold">
+                                    <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase tracking-wider">Faculty</p>
+                                    <p class="font-bold text-lg" id="dept-faculty-count">12 Members</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a id="btn-view-faculty" href="faculty-members.html?dept=english"
+                            class="mt-8 w-full bg-brand-teal text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-brand-darkTeal transition-all shadow-lg shadow-brand-teal/20 no-underline">
+                            Meet the Faculty <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- HOD Widget -->
+                    <div class="bg-brand-darkTeal text-white p-8 rounded-3xl relative overflow-hidden sticky top-32">
+                        <div
+                            class="absolute -right-6 -top-6 w-32 h-32 bg-brand-gold rounded-full blur-3xl opacity-20">
+                        </div>
+                        <h3 class="font-serif text-xl mb-4 relative z-10">Chaiperson's Message</h3>
+                        <p class="text-white/70 italic text-sm mb-6 relative z-10 leading-relaxed">"Welcome to the Department of English. 
+                            Language and literature continue to shape our 
+                            understanding of culture, society, and human thought. We focus on critical thinking, creative expression, 
+                            and strong communication skills to develop scholars, researchers, 
+                            and professionals who can contribute meaningfully to academia and society."</p>
+                        <div class="flex items-center gap-3 relative z-10">
+                            <div class="w-16 h-17 rounded-4xl overflow-hidden border-2 border-white/30">
+                                <img src="https://uot.edu.pk/storage/uploads/staff/7b7fa5ec-0187-4606-9946-303e9b6493b0.png" alt="English HOD" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-bold">Dr. Shah Mir Baloch</p>
+                                <p class="text-xs text-brand-gold uppercase tracking-wider">Chairperson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="lg:col-span-8">
+                    <div class="mb-16">
+                        <div class="flex items-end gap-4 mb-8">
+                            <h2 class="text-4xl font-serif text-brand-darkTeal">Programs Offered</h2>
+                            <div class="h-px bg-gray-200 flex-1 mb-2"></div>
+                        </div>
+
+                        <!-- Static Programs Grid -->
+                        <div id="dept-programs" class="grid md:grid-cols-2 gap-6">
+                            <a href="program-courses.html#bs-program"
+                                class="group block bg-white border border-gray-100 p-6 rounded-2xl hover:shadow-xl hover:border-brand-gold/30 transition-all cursor-pointer no-underline">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h3
+                                            class="text-xl font-bold text-brand-darkTeal group-hover:text-brand-teal transition-colors">
+                                            BS English literature</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Undergraduate • 4 Years </p>
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center group-hover:bg-brand-gold group-hover:text-white transition-all">
+                                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="program-courses.html#ads-program"
+                                class="group block bg-white border border-gray-100 p-6 rounded-2xl hover:shadow-xl hover:border-brand-gold/30 transition-all cursor-pointer no-underline">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h3
+                                            class="text-xl font-bold text-brand-darkTeal group-hover:text-brand-teal transition-colors">
+                                            ADS in English literature </h3>
+                                        <p class="text-sm text-gray-400 mt-1">Undergraduate • 2 Years </p>
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center group-hover:bg-brand-gold group-hover:text-white transition-all">
+                                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        
+
+                            <a href="program-courses.html#ms-program"
+                                class="group block bg-white border border-gray-100 p-6 rounded-2xl hover:shadow-xl hover:border-brand-gold/30 transition-all cursor-pointer no-underline">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h3
+                                            class="text-xl font-bold text-brand-darkTeal group-hover:text-brand-teal transition-colors">
+                                                MS/M.Phil English literature</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Graduate • 2 Years</p>
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center group-hover:bg-brand-gold group-hover:text-white transition-all">
+                                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+  
+                    
+                    <div>
+                        <div class="flex items-end gap-4 mb-8">
+                            <h2 class="text-4xl font-serif text-brand-darkTeal">Research & Facilities</h2>
+                            <div class="h-px bg-gray-200 flex-1 mb-2"></div>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="flex gap-4">
+                                    <i data-lucide="check-circle" class="w-6 h-6 text-brand-gold shrink-0"></i>
+                                    <div>
+                                        <h4 class="font-bold text-brand-teal mb-1">Language & Linguistics Lab</h4>
+                                        <p class="text-sm text-gray-500">
+                                        Equipped with audio-visual tools to enhance pronunciation, listening skills, and linguistic analysis.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <i data-lucide="check-circle" class="w-6 h-6 text-brand-gold shrink-0"></i>
+                                    <div>
+                                        <h4 class="font-bold text-brand-teal mb-1">Literary Society & Activities</h4>
+                                        <p class="text-sm text-gray-500">
+                                        Activities such as debates, poetry recitals, and drama performances to develop creativity and communication skills.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <i data-lucide="check-circle" class="w-6 h-6 text-brand-gold shrink-0"></i>
+                                    <div>
+                                        <h4 class="font-bold text-brand-teal mb-1">Research Seminars & Workshops</h4>
+                                        <p class="text-sm text-gray-500">
+                                        Regular seminars focusing on English literature, linguistics, research writing, and critical thinking.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <i data-lucide="check-circle" class="w-6 h-6 text-brand-gold shrink-0"></i>
+                                    <div>
+                                        <h4 class="font-bold text-brand-teal mb-1">Departmental Library & Reading Room</h4>
+                                        <p class="text-sm text-gray-500">
+                                        A reading space with a rich collection of English literature books, journals, and research materials.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Eligibility critiria for department of BBA -->
+                    <div class="bg-white mt-10 p-10 rounded-3xl shadow-sm border border-gray-100">
+                        <h2 class="text-3xl font-serif text-brand-darkTeal mb-6">Eligibility</h2>
+                        <ul class="space-y-4">
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Intermediate (HSSC) in Arts, Science, or Commerce with at least
+                                    <strong class="text-brand-teal">45% marks</strong> or equivalent
+                                    qualifications.</span>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Successful clearance of the University Entry Test.</span>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Candidates with A-Levels must provide an equivalence
+                                    certificate from IBCC.</span>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Age limit: No Age limit at time of admission.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+
+    <footer id="footer"></footer>
+
+    <script src="../../Assets/main.js"></script>
+</body>
+</html>

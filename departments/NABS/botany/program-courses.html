@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botany Course List - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../../../images/uotlogo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+    <main class="min-h-screen pt-28 pb-20 relative z-10">
+        <div id="bs-program" class="container mx-auto px-6 md:px-12 pt-12">
+            <h2  class="text-3xl font-serif text-brand-darkTeal mb-4 border-l-4 border-brand-gold pl-4 text-center">
+              BS Botany (8 Semesters)
+            </h2>
+            <p class="text-gray-600 mb-10 text-lg text-center">
+                BS Botany Covers plants life and diverse disciplines including Plant Taxonomy, Physiology, Ecology, Microbiology, Biotechnology, and Ethnobotany.
+            </p>
+            <!-- Program Content Sections -->
+            <div id="program-content-container" class="max-w-4xl mx-auto space-y-24">
+                <div class="space-y-10">
+
+                    <!-- Semester 1 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                                First Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">17 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Functional English (G)</td><td>Gen-301</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Quantitative Reasoning I (G)</td><td>Gen-302</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Islamic Studies (G)</td><td>Gen-303</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Environmental Science (G)</td><td>Gen-304</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Analytical Chemistry (I)</td><td>CH-305</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">6</td><td>Cell Biology, Genetics, and Evolution</td><td>Bot-311</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 2 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold w-8 h-8 flex items-center justify-center rounded-full text-sm">2</span>
+                                Second Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold text-center">17 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Expository Writing (G)</td><td>Gen-306</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Quantitative Reasoning (II) (G)</td><td>Gen-307</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Ideology and Constitution of Pakistan (G)</td><td>Gen-308</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Application of ICT (G)</td><td>Gen-309</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Organic Chemistry (I)</td><td>CH-310</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">6</td><td>Diversity of Plants (M)</td><td>Bot-312</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 3 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                                Third Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">15 Credit Hours</span>
+                        </div>
+                        <div class="mx-auto overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Enterpreneurship (G)</td><td>Gen-401</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Civics and Community Management (G)</td><td>Gen-402</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Behaviour Science (G)</td><td>Gen-403</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Inorganic Chemistry (I)</td><td>CH-405</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Plant Systematics, Anatomy and Development (M)</td><td>Bot-411</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">6</td><td>Introduction to Biochemistry (I)</td><td>BCH-404</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Semester 4 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">4</span>
+                                Fourth Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">18 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                             <table class="md:w-full">
+                            <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                <tr>
+                                    <th class="py-4 px-6 text-center">#</th>
+                                    <th class="py-4 px-6">Course Title</th>
+                                    <th class="py-4 px-6">Code</th>
+                                    <th class="py-4 px-6 text-center">Theory</th>
+                                    <th class="py-4 px-6 text-center">Lab</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="text-center py-4">1</td><td>Philosophy (G)</td><td>Gen-406</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                <tr><td class="text-center py-4">2</td><td>Plant Physiology and Ecology (M)</td><td>Bot-412</td><td class="text-center">4</td><td class="text-center">0</td></tr>
+                                <tr><td class="text-center py-4">3</td><td>Biodiversity and Conservation (M)</td><td>Bot-413</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="text-center py-4">4</td><td>Biostatistics (M)</td><td>Bot-414</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="text-center py-4">5</td><td>Molecular Biology (M)</td><td>Bot-415</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="text-center py-4">6</td><td>Plant Biochemistry (M)</td><td>Bot-516</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 5 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">5</span>
+                                Fifth Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">15 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Phytogeography (M)</td><td>Bot-511</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Phycology and Bryology (M)</td><td>Bot-512</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Mycology and Plant Pathology (M)</td><td>Bot-513</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Diversity of Vascular Plants (M)</td><td>Bot-514</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Plant Systematics (M)</td><td>Bot-515</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 6  -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">6</span>
+                                Sixth Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">15 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Research Methodology & Scientific Writing (M)</td><td>Bot-520</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Seed Production Technology (M)</td><td>Bot-516</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Bacteriology and Virology (M)</td><td>Bot-517</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Plant Ecology-I (M)</td><td>Bot-518</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Plant Physiology-I (M)</td><td>Bot-519</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 7 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">7</span>
+                                Seventh Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">15 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Plant Anatomy (M)</td><td>BOT-601</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Field Experience / Internship</td><td>BOT-602</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Plant Ecology-II (M)</td><td>BOT-603</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Plant Physiology-II (M)</td><td>-</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Agriculture Biotechnology (M)</td><td>-</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 8 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">8</span>
+                                Eight Semester
+                            </h3>
+                            <span class="bg-white/10 px-4 py-1.5 rounded-full text-sm font-bold">15 Credit Hours</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="md:w-full">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-center py-4">1</td><td>Capstone Project</td><td>BOT-608</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">2</td><td>Genetics (M)</td><td>BOT-604</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">3</td><td>Applied Ethnobotany (M)</td><td>BOT-605</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">4</td><td>Environmental Biology</td><td>BOT-606</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="text-center py-4">5</td><td>Plant Tissue Culture</td><td>BOT-607</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <!-- BS Botany 4-Year Fee Structure -->
+        <section id="botany-fees" class="scroll-mt-32 border-t border-gray-200 pt-16 mt-20">
+            <div class="text-center mb-12">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Financial Details</span>
+                <h2 class="text-4xl font-serif text-brand-darkTeal mb-4">BS Botany 4-Year Program Fee Structure</h2>
+                <p class="text-xl text-gray-500 font-light">Faculty of Botany </p>
+            </div>
+            <!-- fees structure  -->
+            <div class="max-w-2xl mx-auto space-y-12">
+
+                <!-- 1st Semester -->
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5 flex">
+                        <span class="bg-brand-gold text-brand-darkTeal w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold">1st</span> 
+                        <h3 class="text-xl font-bold pl-3">Semester Fee Structure</h3>
+                    </div>
+                    <table class="w-full text-left">
+                         <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                             <tr>
+                                 <th class="p-4">Description</th>
+                                 <th class="p-4 text-right">Amount (Rs)</th>
+                             </tr>
+                         </thead>
+                         <tbody class="text-gray-700">
+                             <tr class="border-b">
+                                 <td class="p-4">Admission Fee (One time)</td>
+                                 <td class="p-4 text-right">2,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Registration Fee (One time)</td>
+                                 <td class="p-4 text-right">1,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Tuition Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">11,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Library Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">500</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Security Fee (One time, Refundable)</td>
+                                 <td class="p-4 text-right">1,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Lab Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">2,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Computer Lab Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">500</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Sports Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">500</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Examination Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">1,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Identity Card (One time)</td>
+                                 <td class="p-4 text-right">300</td>
+                             </tr>
+                     
+                             <tr class="bg-brand-sand font-bold">
+                                 <td class="p-4">Total Fee for 1st Semester</td>
+                                 <td class="p-4 text-right">19,800</td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+
+                <!-- 2nd to 8th Semester -->
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5 flex">
+                        <span class="bg-brand-gold text-brand-darkTeal w-16 h-10 rounded-2xl flex items-center justify-center text-sm font-bold">2nd–8th</span> 
+                        <h3 class="text-xl font-bold pl-3">Semester Fee</h3>
+                    </div>
+                     <table class="w-full text-left">
+                         <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                             <tr>
+                                 <th class="p-4">Description</th>
+                                 <th class="p-4 text-right">Amount (Rs)</th>
+                             </tr>
+                         </thead>
+                         <tbody class="text-gray-700">
+                             <tr class="border-b">
+                                 <td class="p-4">Tuition Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">11,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Library Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">500</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Lab Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">2,000</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Computer Lab Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">500</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Sports Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">500</td>
+                             </tr>
+                             <tr class="border-b">
+                                 <td class="p-4">Examination Fee (Per Semester)</td>
+                                 <td class="p-4 text-right">1,000</td>
+                             </tr>
+                     
+                             <tr class="bg-brand-sand font-bold">
+                                 <td class="p-4">Per Semester Fee (2nd to 8th Semester)</td>
+                                 <td class="p-4 text-right">15,500</td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+
+                <!-- Transport -->
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5">
+                        <h3 class="text-xl font-bold">Transport Fee</h3>
+                    </div>
+                    <table class="w-full text-left">
+                        <tbody>
+                            <tr class="border-b"><td class="p-4">Long Route</td><td class="p-4 text-right">4,000</td></tr>
+                            <tr><td class="p-4">Short Route</td><td class="p-4 text-right">3,500</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Hostel -->
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5">
+                        <h3 class="text-xl font-bold">Hostel Fee</h3>
+                    </div>
+                    <table class="w-full text-left">
+                        <tbody>
+                            <tr class="border-b"><td class="p-4">Admission Fee (One time)</td><td class="p-4 text-right">1,000</td></tr>
+                            <tr><td class="p-4">Hostel Rent (Per Semester)</td><td class="p-4 text-right">2,500</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Examination & Misc -->
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5">
+                        <h3 class="text-xl font-bold">Examination & Misc Charges</h3>
+                    </div>
+                    <table class="w-full text-left">
+                        <tbody class="text-gray-700">
+                            <tr class="border-b"><td class="p-4">DMC</td><td class="p-4 text-right">200</td></tr>
+                            <tr class="border-b"><td class="p-4">Transcript</td><td class="p-4 text-right">500 / 1,000</td></tr>
+                            <tr class="border-b"><td class="p-4">Degree</td><td class="p-4 text-right">2,000 - 6,000</td></tr>
+                            <tr class="border-b"><td class="p-4">Verification</td><td class="p-4 text-right">500 / 800</td></tr>
+                            <tr class="border-b"><td class="p-4">Rechecking</td><td class="p-4 text-right">1,000</td></tr>
+                            <tr class="border-b"><td class="p-4">Registration</td><td class="p-4 text-right">1,500</td></tr>
+                            <tr class="border-b"><td class="p-4">Repeat / Improvement</td><td class="p-4 text-right">2,000</td></tr>
+                            <tr class="border-b"><td class="p-4">Re-admission</td><td class="p-4 text-right">1,000</td></tr>
+                            <tr><td class="p-4">Freeze / Unfreeze</td><td class="p-4 text-right">1,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>        
+
+
+
+
+ <script src="../../../Assets/main.js"></script>
+</body>
+
+</html>

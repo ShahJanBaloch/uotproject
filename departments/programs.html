@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Details - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6">
+        <div class="container mx-auto px-6 md:px-12">
+            <div
+                class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-full px-6 py-3 flex items-center justify-between shadow-lg shadow-black/5">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer group" onclick="window.location.href='index.html'">
+                    <img src="https://uot.edu.pk/img/uotlogo.png" alt="UoT Logo"
+                        class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110">
+                    <div class="hidden md:flex flex-col leading-none">
+                        <span class="text-lg font-bold text-brand-teal tracking-tight">University of Turbat</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Links -->
+                <div class="hidden xl:flex items-center gap-8 text-sm font-medium text-brand-teal/80">
+                    <a href="index.html" class="hover:text-brand-teal transition-colors font-semibold">Home</a>
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 hover:text-brand-teal transition-colors">Academics <i
+                                data-lucide="chevron-down" class="w-3 h-3"></i></button>
+                        <div
+                            class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            <div
+                                class="bg-white rounded-2xl p-6 shadow-2xl border border-gray-100 w-[600px] grid grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Faculties
+                                    </h4>
+                                    <a href="faculties.html"
+                                        class="block py-2 text-brand-teal hover:text-brand-gold font-bold text-lg">Science
+                                        & Engineering</a>
+                                    <a href="department.html?id=arts"
+                                        class="block py-2 text-brand-teal hover:text-brand-gold font-bold text-lg">Arts
+                                        & Humanities</a>
+                                    <a href="department.html?id=management"
+                                        class="block py-2 text-brand-teal hover:text-brand-gold font-bold text-lg">Business
+                                        & Economics</a>
+                                    <a href="department.html?id=law"
+                                        class="block py-2 text-brand-teal hover:text-brand-gold font-bold text-lg">Law &
+                                        Justice</a>
+                                </div>
+                                <div class="bg-brand-sand rounded-xl p-4">
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Featured
+                                    </h4>
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-brand-gold shadow-sm">
+                                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-brand-teal text-sm">Admission 2026</p>
+                                            <p class="text-xs text-gray-500">Applications are open</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-brand-gold shadow-sm">
+                                            <i data-lucide="download" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-brand-teal text-sm">Prospectus</p>
+                                            <p class="text-xs text-gray-500">Download PDF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="hover:text-brand-teal transition-colors">Research</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">Life at UoT</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">News</a>
+                </div>
+
+                <!-- CTA -->
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class="hidden md:flex text-sm font-bold text-brand-teal hover:text-brand-gold transition-colors">Portal
+                        Login</a>
+                    <a href="faculties.html"
+                        class="bg-brand-teal hover:bg-brand-darkTeal text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-brand-teal/20 flex items-center gap-2 group">
+                        Apply Now <i data-lucide="arrow-right"
+                            class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                    <button onclick="toggleMobileMenu()" class="xl:hidden text-brand-teal">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[60] bg-brand-teal text-white transform translate-x-full transition-transform duration-500 xl:hidden">
+        <div class="p-8">
+            <div class="flex justify-between items-center mb-12">
+                <span class="font-bold text-2xl">Menu</span>
+                <button onclick="toggleMobileMenu()" class="p-2 bg-white/10 rounded-full"><i data-lucide="x"
+                        class="w-6 h-6"></i></button>
+            </div>
+            <div class="space-y-6 text-2xl font-serif">
+                <a href="index.html" class="block hover:text-brand-gold transition-colors">Home</a>
+                <a href="faculties.html" class="block hover:text-brand-gold transition-colors">Academics</a>
+                <a href="#" class="block hover:text-brand-gold transition-colors">Research</a>
+                <a href="#" class="block hover:text-brand-gold transition-colors">Admissions</a>
+                <a href="#" class="block hover:text-brand-gold transition-colors">Portal</a>
+            </div>
+            <div class="mt-12 pt-12 border-t border-white/10">
+                <p class="text-sm text-brand-gold uppercase tracking-widest mb-4">Contact</p>
+                <p class="text-lg opacity-80">info@uot.edu.pk</p>
+                <p class="text-lg opacity-80">+92 852 411534</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="min-h-screen pt-32 pb-20">
+        <div class="container mx-auto px-6 md:px-12">
+
+            <!-- Program Header -->
+            <div
+                class="bg-brand-darkTeal text-white rounded-[2.5rem] p-12 md:p-16 relative overflow-hidden shadow-2xl mb-12">
+                <div
+                    class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-teal rounded-full blur-[100px] opacity-40 -mr-20 -mt-20">
+                </div>
+                <div class="relative z-10">
+                    <div
+                        class="inline-block bg-brand-gold text-brand-darkTeal text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest mb-6">
+                        Undergraduate Program</div>
+                    <h1 class="text-4xl md:text-6xl font-serif mb-6 leading-tight">BS Computer Science</h1>
+                    <p class="text-xl text-white/70 max-w-3xl font-light leading-relaxed">
+                        A rigorous academic journey designed to foster critical thinking, technical expertise, and
+                        leadership skills for the modern professional landscape.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Main Info -->
+                <div class="lg:col-span-8 space-y-12">
+                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100">
+                        <h2 class="text-3xl font-serif text-brand-darkTeal mb-6">Program Overview</h2>
+                        <div class="text-gray-600 leading-relaxed space-y-6 text-lg font-light">
+                            <p>
+                                The BS Computer Science program focuses on the theoretical and practical aspects of
+                                computing. It prepares students for careers in software development, data science, and
+                                system architecture. The curriculum is designed to meet international standards
+                                (ACM/IEEE) and includes a mix of core computing courses, supporting sciences, and
+                                electives that allow students to specialize in areas like AI, Networks, or Web
+                                Engineering.
+                            </p>
+                            <p>
+                                Students will engage in hands-on projects, lab work, and a final year capstone project
+                                that solves real-world problems. Our faculty members, who are experts in their fields,
+                                provide mentorship and guidance throughout the academic journey.
+                            </p>
+                        </div>
+
+                        <h3 class="text-2xl font-serif text-brand-darkTeal mt-10 mb-4">Program Objectives</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex gap-3 items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-teal mt-1 shrink-0"></i>
+                                <span>To provide a solid foundation in computer science theory and practice.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-teal mt-1 shrink-0"></i>
+                                <span>To develop problem-solving skills and the ability to design efficient software
+                                    solutions.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-brand-teal mt-1 shrink-0"></i>
+                                <span>To prepare students for leadership roles in the technology sector and
+                                    academia.</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-2xl font-serif text-brand-darkTeal mt-10 mb-4">Career Opportunities</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-brand-sand px-4 py-2 rounded-lg text-sm text-brand-darkTeal font-medium">Software
+                                Engineer</span>
+                            <span
+                                class="bg-brand-sand px-4 py-2 rounded-lg text-sm text-brand-darkTeal font-medium">Data
+                                Scientist</span>
+                            <span
+                                class="bg-brand-sand px-4 py-2 rounded-lg text-sm text-brand-darkTeal font-medium">System
+                                Analyst</span>
+                            <span
+                                class="bg-brand-sand px-4 py-2 rounded-lg text-sm text-brand-darkTeal font-medium">Network
+                                Administrator</span>
+                            <span class="bg-brand-sand px-4 py-2 rounded-lg text-sm text-brand-darkTeal font-medium">Web
+                                Developer</span>
+                            <span class="bg-brand-sand px-4 py-2 rounded-lg text-sm text-brand-darkTeal font-medium">AI
+                                Specialist</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100">
+                        <h2 class="text-3xl font-serif text-brand-darkTeal mb-6">Eligibility</h2>
+                        <ul class="space-y-4">
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Intermediate (HSSC) Pre-Engineering / ICS with at least
+                                    <strong class="text-brand-teal">50% marks</strong> or equivalent
+                                    qualifications.</span>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Successful clearance of the University Entry Test.</span>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Candidates with A-Levels must provide an equivalence
+                                    certificate from IBCC.</span>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3"></i>
+                                </div>
+                                <span class="text-gray-600">Age limit: 24 years at time of admission.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="program-courses.html?program=BS%20Computer%20Science"
+                            class="flex-1 bg-white border border-gray-200 text-brand-darkTeal p-6 rounded-2xl hover:border-brand-gold hover:shadow-lg transition-all flex items-center gap-4 group no-underline">
+                            <div
+                                class="w-12 h-12 bg-brand-sand rounded-xl flex items-center justify-center group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                                <i data-lucide="book-open" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-lg">Study Plan</span>
+                                <span class="text-sm text-gray-400">View semester breakdown</span>
+                            </div>
+                        </a>
+                        <a href="program-fee.html?program=BS%20Computer%20Science"
+                            class="flex-1 bg-white border border-gray-200 text-brand-darkTeal p-6 rounded-2xl hover:border-brand-gold hover:shadow-lg transition-all flex items-center gap-4 group no-underline">
+                            <div
+                                class="w-12 h-12 bg-brand-sand rounded-xl flex items-center justify-center group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                                <i data-lucide="coins" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-lg">Fee Structure</span>
+                                <span class="text-sm text-gray-400">View costs details</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="lg:col-span-4 space-y-8">
+                    <div class="bg-brand-teal text-white p-8 rounded-3xl shadow-xl sticky top-32">
+                        <h3 class="font-serif text-2xl mb-8">Key Details</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                                <span class="text-white/60">Duration</span>
+                                <span class="font-bold">4 Years</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                                <span class="text-white/60">Semesters</span>
+                                <span class="font-bold">8</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                                <span class="text-white/60">Credit Hours</span>
+                                <span class="font-bold">130+</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                                <span class="text-white/60">Timing</span>
+                                <span class="font-bold">Morning</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-2">
+                                <span class="text-white/60">Seats</span>
+                                <span class="font-bold text-brand-gold">50</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-brand-gold text-brand-darkTeal font-bold py-4 rounded-xl mt-8 hover:bg-white transition-colors">
+                            Apply Online
+                        </button>
+                        <p class="text-xs text-center text-white/40 mt-4">Applications for Spring 2026 are open.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer (Dark Mode) -->
+    <footer class="bg-brand-darkTeal text-white pt-24 pb-12 relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-teal rounded-full blur-[120px] opacity-30 pointer-events-none">
+        </div>
+
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
+
+                <div class="lg:col-span-4">
+                    <div class="flex items-center gap-3 mb-8">
+                        <img src="https://uot.edu.pk/img/uotlogo.png" class="h-16 w-auto bg-white rounded-xl p-1">
+                        <div>
+                            <h3 class="text-2xl font-serif font-bold">University of Turbat</h3>
+                            <p class="text-brand-gold text-sm tracking-widest uppercase">Tradition • Innovation</p>
+                        </div>
+                    </div>
+                    <p class="text-white/60 leading-relaxed mb-8">
+                        The University of Turbat is a public sector university in Turbat, Balochistan, Pakistan. We are
+                        committed to providing quality education and fostering a culture of research and innovation.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-brand-gold hover:text-brand-darkTeal transition-all"><i
+                                data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-brand-gold hover:text-brand-darkTeal transition-all"><i
+                                data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-brand-gold hover:text-brand-darkTeal transition-all"><i
+                                data-lucide="linkedin" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-brand-gold hover:text-brand-darkTeal transition-all"><i
+                                data-lucide="instagram" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Administration</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Campus Life</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">News & Events</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="font-bold text-lg mb-6">Admissions</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">How to Apply</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Fee Structure</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Scholarships</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Prospectus</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <h4 class="font-bold text-lg mb-6">Newsletter</h4>
+                    <p class="text-white/60 mb-4 text-sm">Subscribe to receive updates on admissions and events.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Email Address"
+                            class="bg-white/10 border border-white/10 rounded-lg px-4 py-3 w-full text-white placeholder-white/40 focus:outline-none focus:ring-1 focus:ring-brand-gold">
+                        <button
+                            class="bg-brand-gold text-brand-darkTeal px-4 rounded-lg font-bold hover:bg-white transition-colors"><i
+                                data-lucide="arrow-right" class="w-5 h-5"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                <p>&copy; 2026 University of Turbat. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Specific script for the sticky header transition
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-6');
+            } else {
+                navbar.classList.add('py-6');
+                navbar.classList.remove('py-3');
+            }
+        });
+    </script>
+</body>
+
+</html>

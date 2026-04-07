@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+    <!-- BS Political Science Course Structure + Fee Structure -->
+    <section id="bs-political-science" class="min-h-screen pt-32 pb-[40px] relative z-10">
+        <h2 class="text-3xl font-serif text-brand-darkTeal mb-4 border-l-4 border-brand-gold pl-4 text-center">
+            BS Political Science (8 Semesters)
+        </h2>
+        <p class="text-gray-600 mb-10 text-lg text-center">
+            4-Year Degree Program focusing on political theory, international relations, governance, and public policy.
+        </p>
+    
+        <div class="container mx-auto px-6 md:px-[200px] ">
+    
+            <!-- Semester 1 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex justify-center items-center">1</span>
+                        First Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">17 Credit Hours</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[600px]">
+                        <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                            <tr>
+                                <th class="p-4 text-center">#</th>
+                                <th class="p-4">Course Title</th>
+                                <th class="p-4 text-center">Credits</th>
+                                <th class="p-4 text-center">Theory</th>
+                                <th class="p-4 text-center">Lab</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="p-4 text-center">1</td><td class="p-4 font-bold">English I</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            <tr><td class="p-4 text-center">2</td><td class="p-4 font-bold">Islamic Studies</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                            <tr><td class="p-4 text-center">3</td><td class="p-4 font-bold">Introduction to Political Science I</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            <tr><td class="p-4 text-center">4</td><td class="p-4 font-bold">Introduction to Psychology</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            <tr><td class="p-4 text-center">5</td><td class="p-4 font-bold">Application of ICT</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            <tr><td class="p-4 text-center">6</td><td class="p-4 font-bold">Basics of Science</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <!-- Semester 2 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex justify-center items-center">2</span>
+                        Second Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">17 Credit Hours</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[600px]">
+                        <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                            <tr>
+                                <th class="p-4 text-center">#</th>
+                                <th class="p-4">Course Title</th>
+                                <th class="p-4 text-center">Credits</th>
+                                <th class="p-4 text-center">Theory</th>
+                                <th class="p-4 text-center">Lab</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="p-4 text-center">1</td><td class="p-4 font-bold">English II</td><td class="text-center">3</td><td class="text-center">3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">2</td><td class="p-4 font-bold">Ideology & Constitution of Pakistan</td><td class="text-center">2</td><td class="text-center">2</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">3</td><td class="p-4 font-bold">Political Science II</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">4</td><td class="p-4 font-bold">Political Science III</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">5</td><td class="p-4 font-bold">Psychology</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">6</td><td class="p-4 font-bold">Economics</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <!-- Semester 3 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold w-8 h-8 rounded-full flex items-center justify-center">3</span>
+                        Third Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">16 Credit Hours</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[600px]">
+                        <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                            <tr>
+                                <th class="p-4 text-center">#</th>
+                                <th class="p-4">Course Title</th>
+                                <th class="p-4 text-center">Credits</th>
+                                <th class="p-4 text-center">Theory</th>
+                                <th class="p-4 text-center">Lab</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="p-4 text-center">1</td><td class="p-4 font-bold">English III</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">2</td><td class="p-4 font-bold">Quantitative Reasoning I</td><td class="text-center">4</td><td>4</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">3</td><td class="p-4 font-bold">Political Systems (Developed)</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">4</td><td class="p-4 font-bold">Modern European History</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                            <tr><td class="p-4 text-center">5</td><td class="p-4 font-bold">Philosophy</td><td class="text-center">3</td><td>3</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <!-- Semester 4 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold w-8 h-8 rounded-full flex items-center justify-center">4</span>
+                        Fourth Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">16 Credit Hours</span>
+                </div>
+                <table class="w-full">
+                    <tbody>
+                        <tr><td class="p-4">Quantitative Reasoning II</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Political Systems (Developing)</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">Geopolitics</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">International Relations</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Public Finance</td><td>3</td><td>3</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+          
+            <!-- Semester 5 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold w-8 h-8 rounded-full flex items-center justify-center">5</span>
+                        Fifth Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">16 Credit Hours</span>
+                </div>
+                <table class="w-full">
+                    <tbody>
+                        <tr><td class="p-4">Western Political Philosophy I</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">Muslim Political Philosophy</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">Comparative Politics I</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">Public Policy</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">World Politics Since 1945</td><td>4</td><td>4</td><td>0</td></tr>
+                    </tbody>
+                </table>
+                
+            </div>
+    
+            <!-- Semester 6 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold w-8 h-8 rounded-full flex items-center justify-center">6</span>
+                        Sixth Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">16 Credit Hours</span>
+                </div>
+                <table class="w-full">
+                    <tbody>
+                        <tr><td class="p-4">Western Political Philosophy II</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">Human Rights</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Comparative Politics II</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Public Administration</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Internship</td><td>3</td><td>3</td><td>0</td></tr>
+                    </tbody>
+                </table>
+                
+            </div>
+             
+           
+    
+            <!-- Semester 7 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold w-8 h-8 rounded-full flex items-center justify-center">7</span>
+                        Seventh Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">16 Credit Hours</span>
+                </div>
+                <table class="w-full">
+                    <tbody>
+                        <tr><td class="p-4">Political Economy</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Research Methodology</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">International Law</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Foreign Policy</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Elective</td><td>3</td><td>3</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div> 
+    
+            <!-- Semester 8 -->
+            <div class="bg-white rounded-3xl mb-9 shadow-sm border overflow-hidden  hover:shadow-xl transition">
+                <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between text-white">
+                    <h3 class="text-2xl font-bold flex gap-3">
+                        <span class="bg-brand-gold w-8 h-8 rounded-full flex items-center justify-center">8</span>
+                        Eight Semester
+                    </h3>
+                    <span class="bg-white/10 px-4 py-1 rounded-full text-sm">16 Credit Hours</span>
+                </div>
+                <table class="w-full">
+                    <tbody>
+                        <tr><td class="p-4">Research Report</td><td>4</td><td>4</td><td>0</td></tr>
+                        <tr><td class="p-4">Democracy & Governance</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">Strategic Studies</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td class="p-4">International Organizations</td><td>3</td><td>3</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+
+        <!-- fees Structure  -->
+        <section id="bs-political-fee" class="scroll-mt-32 border-t pt-16 mt-20">
+
+            <div class="text-center mb-12">
+                <span class="text-brand-gold text-xs uppercase">Financial Details</span>
+                <h2 class="text-4xl font-serif text-brand-darkTeal">Fee Structure</h2>
+            </div>
+        
+            <div class="container mx-auto px-6 md:px-[200px] ">
+        
+                <!-- 1st Semester -->
+                <div class="bg-white rounded-3xl mb-7 shadow-xl border overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5 flex">
+                        <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center">1st</span>
+                        <h3 class="pl-3 font-bold">Semester Fee</h3>
+                    </div>
+        
+                    <table class="w-full">
+                        <tbody>
+                            <tr><td class="p-4">Admission Fee</td><td class="text-right p-4">2,000</td></tr>
+                            <tr><td class="p-4">Registration</td><td class="text-right">1,000</td></tr>
+                            <tr><td class="p-4">Tuition</td><td class="text-right">11,000</td></tr>
+                            <tr><td class="p-4">Library</td><td class="text-right">500</td></tr>
+                            <tr><td class="p-4">Security</td><td class="text-right">1,000</td></tr>
+                            <tr><td class="p-4">Computer Lab</td><td class="text-right">500</td></tr>
+                            <tr><td class="p-4">Sports</td><td class="text-right">500</td></tr>
+                            <tr><td class="p-4">Exam</td><td class="text-right">1,000</td></tr>
+                            <tr><td class="p-4">ID Card</td><td class="text-right">300</td></tr>
+        
+                            <tr class="bg-brand-sand font-bold">
+                                <td class="p-4">Total</td>
+                                <td class="p-4 text-right">17,800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- 2–8 Semester -->
+                <div class="bg-white rounded-3xl mb-7 shadow-xl border overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5 flex">
+                        <span class="bg-brand-gold px-3 py-1 rounded">2–8</span>
+                        <h3 class="pl-3 font-bold">Semester Fee</h3>
+                    </div>
+        
+                    <table class="w-full">
+                        <tbody>
+                            <tr><td class="p-4">Tuition</td><td class="text-right">11,000</td></tr>
+                            <tr><td class="p-4">Library</td><td class="text-right">500</td></tr>
+                            <tr><td class="p-4">Computer Lab</td><td class="text-right">500</td></tr>
+                            <tr><td class="p-4">Sports</td><td class="text-right">500</td></tr>
+                            <tr><td class="p-4">Exam</td><td class="text-right">1,000</td></tr>
+        
+                            <tr class="bg-brand-sand font-bold">
+                                <td class="p-4">Total</td>
+                                <td class="p-4 text-right">13,500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Transport -->
+                <div class="bg-white rounded-2xl mb-7 shadow-xl border overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5">
+                        <h3 class="font-bold">Transport</h3>
+                    </div>
+                    <table class="w-full">
+                        <tr><td class="p-4">Long Route</td><td class="text-right">4,000</td></tr>
+                        <tr><td class="p-4">Short Route</td><td class="text-right">3,500</td></tr>
+                    </table>
+                </div>
+        
+                <!-- Hostel -->
+                <div class="bg-white rounded-3xl shadow-xl border overflow-hidden">
+                    <div class="bg-brand-darkTeal text-white p-5">
+                        <h3 class="font-bold">Hostel</h3>
+                    </div>
+                    <table class="w-full">
+                        <tr><td class="p-4">Admission</td><td class="text-right">1,000</td></tr>
+                        <tr><td class="p-4">Rent</td><td class="text-right">2,500</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </section>
+   
+    <!-- Footer (Dark Mode) -->
+    <footer id="footer"></footer>
+
+    <script src="../../Assets/main.js"></script>
+</body>
+
+</html>

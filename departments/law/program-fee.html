@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+    <main class="min-h-screen pt-32 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-12">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Financials</span>
+                <h1 class="text-4xl md:text-5xl font-serif text-brand-darkTeal mb-4">Fee Structure</h1>
+                <p id="fee-subtitle" class="text-xl text-gray-500 font-light">For Law (Fall 2026)</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-brand-darkTeal text-white">
+                                <th class="p-6 font-serif text-lg font-medium border-r border-white/10 w-1/3">Fee Head
+                                </th>
+                                <th class="p-6 font-serif text-lg font-medium border-r border-white/10 w-1/3">1st
+                                    Semester (Rs.)</th>
+                                <th class="p-6 font-serif text-lg font-medium w-1/3">Subsequent (Rs.)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b border-gray-100 hover:bg-brand-sand/50 transition-colors">
+                                <td class="p-6 font-bold text-brand-teal">Admission Fee <span
+                                        class="block text-xs font-normal text-gray-400 mt-1 uppercase tracking-wider">One
+                                        Time Only</span></td>
+                                <td class="p-6 font-bold">5,000</td>
+                                <td class="p-6 text-gray-400 font-light text-2xl">-</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-brand-sand/50 transition-colors">
+                                <td class="p-6 font-medium">Tuition Fee</td>
+                                <td class="p-6">22,000</td>
+                                <td class="p-6">22,000</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-brand-sand/50 transition-colors">
+                                <td class="p-6 font-medium">Examination Fee</td>
+                                <td class="p-6">3,000</td>
+                                <td class="p-6">3,000</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-brand-sand/50 transition-colors">
+                                <td class="p-6 font-medium">Library Fund</td>
+                                <td class="p-6">1,000</td>
+                                <td class="p-6">1,000</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-brand-sand/50 transition-colors">
+                                <td class="p-6 font-medium">Sports Fund</td>
+                                <td class="p-6">1,000</td>
+                                <td class="p-6">1,000</td>
+                            </tr>
+                            <tr class="bg-brand-teal/5">
+                                <td class="p-6 font-bold text-brand-darkTeal text-xl font-serif">Total Payable</td>
+                                <td class="p-6 font-bold text-brand-red text-xl">Rs. 32,000</td>
+                                <td class="p-6 font-bold text-brand-teal text-xl">Rs. 27,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto mt-8 grid md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 border border-blue-100 p-6 rounded-2xl flex gap-4">
+                    <i data-lucide="info" class="text-blue-600 mt-1 shrink-0"></i>
+                    <p class="text-sm text-blue-800 leading-relaxed">
+                        Transport fee is optional (Rs. 5,000/semester) and charged only to students availing the
+                        university bus facility.
+                    </p>
+                </div>
+                <div class="bg-brand-sand border border-gray-200 p-6 rounded-2xl flex gap-4">
+                    <i data-lucide="gem" class="text-brand-gold mt-1 shrink-0"></i>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Need-based and Merit-based scholarships are available. Visit the Student Services office for
+                        more details.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Dark Mode) -->
+    <footer id="footer" class="bg-brand-darkTeal text-white pt-24 pb-12 relative overflow-hidden"></footer>
+
+    <script src="../../Assets/main.js"></script>
+</body>
+
+</html>

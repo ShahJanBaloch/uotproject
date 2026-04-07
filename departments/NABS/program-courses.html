@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+    <main class="min-h-screen pt-32 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Curriculum</span>
+                <h1 id="program-title" class="text-4xl md:text-5xl font-serif text-brand-darkTeal mb-4">Study Plan</h1>
+                <p id="course-subtitle" class="text-xl text-gray-500 font-light">Natural & Basic Sciences</p>
+            </div>
+
+            <!-- Program Content Sections -->
+            <div id="program-content-container" class="max-w-4xl mx-auto space-y-24">
+                
+                <!-- BS Botany Content -->
+                <section id="botany-curriculum" class="scroll-mt-32">
+                    <h2 class="text-2xl font-serif text-brand-darkTeal mb-6 border-l-4 border-brand-gold pl-4">BS Botany Study Plan (8 Semesters)</h2>
+                    <p class="text-gray-600 mb-8">The Bachelor of Science in Botany is a 4-year program (8 semesters) focusing on plant biology, ecology, and research.</p>
+                    <div class="space-y-8">
+                        <!-- Semester 1 (Example) -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                            <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                                <h3 class="font-serif text-xl font-bold">Semester 1 (Foundation)</h3>
+                                <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">18 Credit Hours</span>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                            <span class="font-bold text-gray-700">English-I (Functional English)</span>
+                                        </div>
+                                        <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3+0</span>
+                                    </li>
+                                    <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                            <span class="font-bold text-gray-700">Islamic Studies/Ethics</span>
+                                        </div>
+                                        <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">2+0</span>
+                                    </li>
+                                    <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                            <span class="font-bold text-gray-700">Mathematics-I / Biology-I</span>
+                                        </div>
+                                        <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3+0</span>
+                                    </li>
+                                    <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                            <span class="font-bold text-gray-700">Diversity of Plants (Botany-I)</span>
+                                        </div>
+                                        <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3+1</span>
+                                    </li>
+                                    <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                            <span class="font-bold text-gray-700">Animal Diversity (Zoology-I)</span>
+                                        </div>
+                                        <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3+1</span>
+                                    </li>
+                                    <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                            <span class="font-bold text-gray-700">Physical Chemistry (Chem-I)</span>
+                                        </div>
+                                        <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">2+0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-brand-sand p-8 rounded-3xl border border-gray-200 text-center mt-8">
+                            <i data-lucide="info" class="w-8 h-8 text-brand-gold mx-auto mb-4"></i>
+                            <h3 class="font-serif text-xl text-brand-darkTeal mb-2">Specialization (Sem 5-8)</h3>
+                            <p class="text-gray-600 max-w-2xl mx-auto">
+                                The final four semesters focus on specialized Botany areas like Plant Physiology, Genetics, Biotechnology, and a Final Year Research Project.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BS Zoology Content -->
+                <section id="zoology-curriculum" class="scroll-mt-32">
+                    <h2 class="text-2xl font-serif text-brand-darkTeal mb-6 border-l-4 border-brand-gold pl-4">BS Zoology Study Plan (8 Semesters)</h2>
+                    <p class="text-gray-600 mb-8">The Bachelor of Science in Zoology is a 4-year program (8 semesters) exploring animal biology, physiology, and evolutionary research.</p>
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all text-center p-12">
+                         <i data-lucide="microscope" class="w-12 h-12 text-brand-gold mx-auto mb-4"></i>
+                         <p class="text-lg font-bold text-brand-teal">Comprehensive curriculum for Zoology including Animal Physiology, Genetics, and Wildlife management.</p>
+                    </div>
+                </section>
+
+                <!-- BS Chemistry Content -->
+                <section id="chemistry-curriculum" class="scroll-mt-32">
+                    <h2 class="text-2xl font-serif text-brand-darkTeal mb-6 border-l-4 border-brand-gold pl-4">BS Chemistry Study Plan (8 Semesters)</h2>
+                    <p class="text-gray-600 mb-8">A 4-year program providing in-depth knowledge of Organic, Inorganic, and Physical Chemistry.</p>
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all text-center p-12">
+                         <p class="text-lg font-bold text-brand-teal">Curriculum includes Analytical Chemistry, Quantum Chemistry, and Industrial Lab work.</p>
+                    </div>
+                </section>
+
+                <!-- BS Biochemistry Content -->
+                <section id="biochemistry-curriculum" class="scroll-mt-32">
+                    <h2 class="text-2xl font-serif text-brand-darkTeal mb-6 border-l-4 border-brand-gold pl-4">BS Biochemistry Study Plan (8 Semesters)</h2>
+                    <p class="text-gray-600 mb-8">A multidisciplinary 4-year program combining biology and chemistry to understand biological processes at the molecular level.</p>
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all text-center p-12">
+                         <p class="text-lg font-bold text-brand-teal">Focuses on Molecular Biology, Enzymology, and Metabolism.</p>
+                    </div>
+                </section>
+
+                <!-- AD Program Content -->
+                <section id="ad-curriculum" class="scroll-mt-32">
+                    <h2 class="text-2xl font-serif text-brand-darkTeal mb-6 border-l-4 border-brand-gold pl-4">Associate Degree Programs (Natural Sciences)</h2>
+                    <p class="text-gray-600 mb-8">A 2-year undergraduate program (4 semesters) focused on foundational science education.</p>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                        <p class="text-brand-teal font-bold mb-4">AD Major Options:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>AD Botany</li>
+                            <li>AD Zoology</li>
+                            <li>AD Chemistry</li>
+                            <li>AD Biochemistry</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Bridge Program Content -->
+                <section id="bridge-curriculum" class="scroll-mt-32">
+                    <h2 class="text-2xl font-serif text-brand-darkTeal mb-6 border-l-4 border-brand-gold pl-4">5th Semester (Bridge) Program</h2>
+                    <p class="text-gray-600 mb-8">Designed for AD or 2-year BSc graduates to bridge into the 5th semester of the BS program.</p>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 text-center">
+                         <p class="text-brand-teal font-bold mb-2">Requirement:</p>
+                         <p class="text-gray-500">2-Year AD / BSc degree with at least 50% marks in relevant subject.</p>
+                    </div>
+                </section>
+
+                <!-- Research Programs Content -->
+                <section id="research-curriculum" class="scroll-mt-32">
+                    <div class="bg-brand-darkTeal p-10 rounded-3xl text-white">
+                        <h2 class="text-3xl font-serif mb-6">MPhil / PhD Research Programs</h2>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h3 class="text-brand-gold font-bold text-xl uppercase tracking-wider">MPhil Programs</h3>
+                                <ul class="space-y-2 text-white/80">
+                                    <li>MPhil Botany</li>
+                                    <li>MPhil Chemistry</li>
+                                    <li>MPhil Zoology</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-brand-gold font-bold text-xl uppercase tracking-wider">PhD Programs</h3>
+                                <ul class="space-y-2 text-white/80">
+                                    <li>PhD Botany</li>
+                                    <li>PhD Chemistry</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Fee Structure Table -->
+                <section id="fee-section" class="scroll-mt-32 mt-20 border-t border-gray-200 pt-20">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-serif text-brand-darkTeal mb-4">Fee Structure</h2>
+                        <p id="fee-title" class="text-xl text-gray-500 font-light italic">Standard BS Programs (Botany/Zoology/Chem/BioChem)</p>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                        <table class="w-full text-left">
+                            <thead class="bg-brand-darkTeal text-white">
+                                <tr>
+                                    <th class="p-6 font-serif text-lg">Fee Head</th>
+                                    <th class="p-6 font-serif text-lg">1st Semester (Rs.)</th>
+                                    <th class="p-6 font-serif text-lg">Subsequent (Rs.)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="fee-table-body" class="text-gray-700">
+                                <tr class="border-b border-gray-100">
+                                    <td class="p-6 font-bold text-brand-teal">Admission Fee (One Time)</td>
+                                    <td class="p-6 font-bold">5,000</td>
+                                    <td class="p-6 text-gray-400">-</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="p-6">Tuition Fee</td>
+                                    <td class="p-6">18,000</td>
+                                    <td class="p-6">18,000</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="p-6">Library & Lab Fund</td>
+                                    <td class="p-6">4,000</td>
+                                    <td class="p-6">4,000</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="p-6">Examination Fee</td>
+                                    <td class="p-6">3,000</td>
+                                    <td class="p-6">3,000</td>
+                                </tr>
+                                <tr class="bg-brand-teal/5 font-bold text-xl">
+                                    <td class="p-6 font-serif">Total Payable</td>
+                                    <td class="p-6 text-brand-red">Rs. 30,000</td>
+                                    <td class="p-6 text-brand-teal">Rs. 25,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="../../Assets/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

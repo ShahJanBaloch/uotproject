@@ -1,0 +1,92 @@
+/* style.css - Updated for V2 */
+body {
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Animations */
+@keyframes slow-zoom {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.animate-slow-zoom {
+    animation: slow-zoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+}
+
+/* Hide scrollbar for horizontal scroll areas */
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Clip Path for Unique Hero Bottom */
+.clip-hero-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+@media (max-width: 768px) {
+    .clip-hero-bottom {
+        clip-path: none;
+    }
+}
+
+
+/* scolling  */
+
+
+@keyframes newsScroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+.animate-news {
+    animation: newsScroll 15s linear infinite;
+}
+
+/* Custom Scrollbar for News Card */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.5); /* brand-gold with opacity */
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(212, 175, 55, 0.8);
+}

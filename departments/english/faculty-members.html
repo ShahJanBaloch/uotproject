@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Members - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../images/uotlogo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../Assets/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay  -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+    <main class="min-h-screen pt-32 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Academic
+                    Leadership</span>
+                <h1 class="text-5xl md:text-6xl font-serif text-brand-darkTeal mb-6">English Faculty Members</h1>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto font-light">Meet the scholars and researchers
+                    dedicated to shaping the future of our students.</p>
+            </div>
+
+            <div id="faculty-grid" data-department="english" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Faculty cards will be dynamically loaded here by Assets/faculty.js -->
+                <div class="col-span-full py-20 text-center">
+                    <div class="inline-block w-8 h-8 border-4 border-brand-teal border-t-transparent rounded-full animate-spin"></div>
+                    <p class="mt-4 text-gray-500">Loading faculty members...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Dark Mode) -->
+    <footer id="footer"></footer>
+
+    <script src="../../Assets/main.js"></script>
+    <script src="../../Assets/faculty.js"></script>
+</body>
+
+</html>
