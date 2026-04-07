@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarships - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/uotlogo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay  -->
+    <nav id="navbar"></nav>
+    <div class="mobileMenu"></div>
+
+    <!-- Scholarships Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 md:px-12">
+    
+        <!-- Page Title -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl mt-[80px] md:text-5xl font-bold text-brand-gold mb-4">
+            Scholarships
+            </h1>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+            The University of Turbat provides multiple scholarship opportunities
+            to support deserving and talented students in pursuing higher education.
+            </p>
+        </div>
+    
+        <!-- Scholarship Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+            <!-- Undergraduate Scholarship -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition">
+            <div class="w-12 h-12 bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-6">
+                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+    
+            <h3 class="text-xl font-bold text-brand-teal mb-3">
+                Undergraduate Scholarships
+            </h3>
+    
+            <p class="text-gray-500 text-sm leading-relaxed">
+                Financial support is available for undergraduate students belonging
+                to Balochistan and the erstwhile FATA regions to help them continue
+                their higher education at the University of Turbat.
+            </p>
+            </div>
+    
+            <!-- Sister2Sister -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition">
+            <div class="w-12 h-12 bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-6">
+                <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+    
+            <h3 class="text-xl font-bold text-brand-teal mb-3">
+                Sister2Sister Exchange Program
+            </h3>
+    
+            <p class="text-gray-500 text-sm mb-4">
+                A global exchange program that provides female students an
+                opportunity to study abroad and develop leadership skills.
+            </p>
+    
+            <ul class="text-sm text-gray-500 space-y-1">
+                <li><strong>Application Deadline:</strong> December 15, 2021</li>
+            </ul>
+    
+            <div class="mt-4 space-y-2 text-sm">
+                <a href="https://www.sister2sister.pk"
+                class="block text-brand-teal font-semibold hover:text-brand-gold">
+                Visit Website
+                </a>
+    
+                <a href="https://uot.edu.pk/downloads/sister2sister-exchange-program-2022"
+                class="block text-brand-teal font-semibold hover:text-brand-gold">
+                Application Details
+                </a>
+    
+                <a href="https://www.sister2sister.pk/shared/Flyer-S2S-01.pdf"
+                class="block text-brand-teal font-semibold hover:text-brand-gold">
+                Download Flyer
+                </a>
+            </div>
+            </div>
+    
+            <!-- ASAAS -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition">
+            <div class="w-12 h-12 bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-6">
+                <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+    
+            <h3 class="text-xl font-bold text-brand-teal mb-3">
+                ASAAS Scholarship
+            </h3>
+    
+            <p class="text-gray-500 text-sm leading-relaxed">
+                The ASAAS Scholarship Program provides financial assistance to
+                talented students from low-income families to ensure they can
+                complete their university education successfully.
+            </p>
+            </div>
+    
+            <!-- BEEF -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition">
+            <div class="w-12 h-12 bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-6">
+                <i data-lucide="book-open" class="w-6 h-6"></i>
+            </div>
+    
+            <h3 class="text-xl font-bold text-brand-teal mb-3">
+                BEEF Scholarship
+            </h3>
+    
+            <p class="text-gray-500 text-sm leading-relaxed">
+                The Balochistan Education Endowment Fund (BEEF) Scholarship supports
+                talented students of Balochistan by providing financial aid for
+                undergraduate and graduate studies.
+            </p>
+            </div>
+    
+            <!-- Need Based -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition">
+            <div class="w-12 h-12 bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-6">
+                <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+            </div>
+    
+            <h3 class="text-xl font-bold text-brand-teal mb-3">
+                Need-Based Scholarship
+            </h3>
+    
+            <p class="text-gray-500 text-sm leading-relaxed">
+                Need-Based scholarships are offered to financially disadvantaged
+                students to ensure that financial constraints do not hinder their
+                academic progress at the University of Turbat.
+            </p>
+            </div>
+    
+        </div>
+    
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="Assets/main.js"></script>
+    <!-- <script>
+        lucide.createIcons();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('translate-x-full');
+        }
+    </script> -->
+</body>
+</html>

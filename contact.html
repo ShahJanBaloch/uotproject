@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/uotlogo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu Overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+   
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] min-h-[500px] overflow-hidden flex items-end">
+        <!-- Background main section image div -->
+        <!-- <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=2070&auto=format&fit=crop"
+                alt="Contact Us" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-darkTeal/60 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-sand via-transparent to-transparent"></div>
+        </div> -->
+
+        <div class="container mx-auto px-6 md:px-12 relative z-10 pb-20">
+            <div class="animate-fade-in-up">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-2xl ml-8 mb-3 block">Get In Touch</span>
+                <h1 class="text-5xl md:text-7xl font-serif text-brand-white bg-brand-teal rounded-2xl mb-6 backdrop-blur-md inline-block px-6 py-2">
+                    Contact Us
+                </h1>
+                <p class="text-xl text-gray-700 max-w-2xl font-light bg-brand-sand/40 backdrop-blur-sm p-2 rounded-xl border border-white/80 ml-8">
+                    We're here to help. Reach out to us for any inquiries, admissions questions, or support.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen">
+        <section class="py-20 -mt-10 relative z-20">
+            <div class="container mx-auto px-6 md:px-12">
+                
+                <!-- Contact Info Cards -->
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Phone -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 text-center hover:shadow-2xl transition-shadow">
+                        <div class="w-16 h-16 bg-brand-teal rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="phone" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkTeal mb-3">Phone</h3>
+                        <p class="text-gray-600 mb-2">Main Office</p>
+                        <a href="tel:+92852411534" class="text-brand-teal font-bold hover:text-brand-gold transition-colors">+92 852 411534</a>
+                        <p class="text-gray-600 mt-2">Admissions</p>
+                        <a href="tel:+92852411535" class="text-brand-teal font-bold hover:text-brand-gold transition-colors">+92 852 411535</a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 text-center hover:shadow-2xl transition-shadow">
+                        <div class="w-16 h-16 bg-brand-gold rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="mail" class="w-8 h-8 text-brand-darkTeal"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkTeal mb-3">Email</h3>
+                        <p class="text-gray-600 mb-2">General Inquiries</p>
+                        <a href="mailto:info@uot.edu.pk" class="text-brand-teal font-bold hover:text-brand-gold transition-colors">info@uot.edu.pk</a>
+                        <p class="text-gray-600 mt-2">Admissions</p>
+                        <a href="mailto:admissions@uot.edu.pk" class="text-brand-teal font-bold hover:text-brand-gold transition-colors">admissions@uot.edu.pk</a>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 text-center hover:shadow-2xl transition-shadow">
+                        <div class="w-16 h-16 bg-brand-darkTeal rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="map-pin" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkTeal mb-3">Address</h3>
+                        <p class="text-gray-600">
+                            University of Turbat<br>
+                            M8 Road, Ginnah Turbat<br>
+                            Balochistan, Pakistan
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form & Map Grid -->
+                <div class="grid lg:grid-cols-2 gap-12">
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+                        <h2 class="text-3xl font-serif text-brand-darkTeal mb-6">Send Us a Message</h2>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">First Name</label>
+                                    <input type="text" placeholder="Ali" 
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Last Name</label>
+                                    <input type="text" placeholder="Baloch" 
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                                <input type="email" placeholder="ali.baloch@example.com" 
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-all">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+92 321 1234567" 
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-all">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Subject</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-all">
+                                    <option>General Inquiry</option>
+                                    <option>Admissions</option>
+                                    <option>Academic Programs</option>
+                                    <option>Scholarships</option>
+                                    <option>Technical Support</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Message</label>
+                                <textarea rows="5" placeholder="How can we help you?" 
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                class="w-full bg-brand-teal text-white py-4 rounded-xl font-bold hover:bg-brand-darkTeal transition-all shadow-lg shadow-brand-teal/20 flex items-center justify-center gap-2 group">
+                                Send Message
+                                <i data-lucide="send" class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Map & Office Hours -->
+                    <div class="space-y-8">
+                        <!-- Map Placeholder -->
+                        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                            <h3 class="text-2xl font-serif text-brand-darkTeal mb-4">Find Us</h3>
+                            <div class="w-full h-64 bg-brand-sand rounded-2xl overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps?q=University%20of%20Turbat&output=embed"
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Office Hours -->
+                        <div class="bg-brand-darkTeal text-white p-8 rounded-3xl relative overflow-hidden">
+                            <div class="absolute -right-6 -top-6 w-32 h-32 bg-brand-gold rounded-full blur-3xl opacity-20"></div>
+                            <h3 class="text-2xl font-serif mb-6 relative z-10">Office Hours</h3>
+                            <div class="space-y-4 relative z-10">
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-white/70">Monday - Thursday</span>
+                                    <span class="font-bold">8:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-white/70">Friday</span>
+                                    <span class="font-bold">8:00 AM - 12:00 PM</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white/70">Saturday - Sunday</span>
+                                    <span class="font-bold text-brand-gold">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                            <h3 class="text-2xl font-serif text-brand-darkTeal mb-6">Quick Links</h3>
+                            <div class="space-y-3">
+                                <a href="#" class="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors group">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-brand-teal group-hover:translate-x-1 transition-transform"></i>
+                                    Admission Guidelines
+                                </a>
+                                <a href="#" class="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors group">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-brand-teal group-hover:translate-x-1 transition-transform"></i>
+                                    Fee Structure
+                                </a>
+                                <a href="#" class="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors group">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-brand-teal group-hover:translate-x-1 transition-transform"></i>
+                                    Download Prospectus
+                                </a>
+                                <a href="#" class="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors group">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-brand-teal group-hover:translate-x-1 transition-transform"></i>
+                                    Frequently Asked Questions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Department Contacts -->
+                <div class="mt-20">
+                    <h2 class="text-4xl font-serif text-brand-darkTeal mb-12 text-center">Department Contacts</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow">
+                            <div class="w-12 h-12 bg-brand-sand rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="user-check" class="w-6 h-6 text-brand-teal"></i>
+                            </div>
+                            <h4 class="font-bold text-brand-darkTeal mb-2">Admissions Office</h4>
+                            <p class="text-sm text-gray-600 mb-3">For admission inquiries and applications</p>
+                            <a href="mailto:admissions@uot.edu.pk" class="text-brand-teal text-sm font-bold hover:text-brand-gold">admissions@uot.edu.pk</a>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow">
+                            <div class="w-12 h-12 bg-brand-sand rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="book-open" class="w-6 h-6 text-brand-teal"></i>
+                            </div>
+                            <h4 class="font-bold text-brand-darkTeal mb-2">Examination Office</h4>
+                            <p class="text-sm text-gray-600 mb-3">For exam schedules and results</p>
+                            <a href="mailto:exams@uot.edu.pk" class="text-brand-teal text-sm font-bold hover:text-brand-gold">exams@uot.edu.pk</a>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow">
+                            <div class="w-12 h-12 bg-brand-sand rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="home" class="w-6 h-6 text-brand-teal"></i>
+                            </div>
+                            <h4 class="font-bold text-brand-darkTeal mb-2">Hostel Management</h4>
+                            <p class="text-sm text-gray-600 mb-3">For accommodation queries</p>
+                            <a href="mailto:hostel@uot.edu.pk" class="text-brand-teal text-sm font-bold hover:text-brand-gold">hostel@uot.edu.pk</a>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow">
+                            <div class="w-12 h-12 bg-brand-sand rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="help-circle" class="w-6 h-6 text-brand-teal"></i>
+                            </div>
+                            <h4 class="font-bold text-brand-darkTeal mb-2">IT Support</h4>
+                            <p class="text-sm text-gray-600 mb-3">For technical assistance</p>
+                            <a href="mailto:itsupport@uot.edu.pk" class="text-brand-teal text-sm font-bold hover:text-brand-gold">itsupport@uot.edu.pk</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FAQs  -->
+    <section id="faq" class="bg-brand-white py-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+      
+            <!-- Accordion -->
+            <div class="faq-item">
+              <button class="faq-question w-[400px] md:w-full text-left font-semibold bg-gray-100 p-3 rounded-lg overflow-hidden hover:bg-gray-50">
+                How do I apply for admission?
+              </button>
+              <div class="faq-answer hidden p-3 text-gray-700">
+                You can apply online through the UoT Admission Portal or download and submit the form as instructed.
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question w-[400px] md:w-full text-left font-semibold bg-gray-100 p-3 rounded-lg">
+                What are the eligibility criteria for programs?
+              </button>
+              <div class="faq-answer hidden p-3 text-gray-700">
+                Most undergraduate programs require at least 45% marks; BSCS and LLB have additional requirements.
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question w-[400px] md:w-full text-left font-semibold bg-gray-100 p-3 rounded-lg">
+                Are scholarships available?
+              </button>
+              <div class="faq-answer hidden p-3 text-gray-700">
+                Yes, UoT offers various merit and need-based scholarships for eligible students.
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question w-[400px] md:w-full text-left font-semibold bg-gray-100 p-3 rounded-lg">
+                Where can I download the prospectus?
+              </button>
+              <div class="faq-answer hidden p-3 text-gray-700">
+                The prospectus is available on the Student Services section of the official website.
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question w-[400px] text-left font-semibold bg-gray-100 p-3 rounded-lg md:w-full ">
+                Does UoT provide hostel and transport?
+              </button>
+              <div class="faq-answer hidden p-3 text-gray-700">
+                Yes — hostels and campus transport services are available for students.
+              </div>
+            </div>
+      
+          </div>
+        </div>
+    </section>
+
+     <!-- Footer (Dark Mode) -->
+    <div id="footer"></div>
+
+    <script src="Assets/main.js"></script>
+    <script>
+        lucide.createIcons();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('translate-x-full');
+        }
+    </script>
+</body>
+</html>

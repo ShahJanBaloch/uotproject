@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics News | University of Turbat (UOT)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet">
+    <link rel="icon" href="images/uotlogo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Assets/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white mt-[80px]">
+   <!-- Geometric Pattern Background (Fixed) -->
+   <div class="fixed inset-0 z-0 opacity-[0.05] pointer-events-none" style="
+   background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+ ">
+   </div>
+
+  <!-- Navigation and Mobile Menu overlay  -->
+  <nav id="navbar"></nav>
+  <div class="mobileMenu"></div>
+
+  <!-- ================= NEWS SECTION ================= -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+  
+  
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center text-brand-gold">
+        Academic Updates and News
+      </h2>
+      <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+        Latest updates, events, and announcements from the Academic and institutional news at UOT.
+      </p>
+  
+  
+      <!-- Filter Buttons -->
+      <div id="newsButtons" class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="news-btn px-6 py-2 rounded-full bg-[#1F8A70] text-white font-semibold" data-category="all">
+          All
+        </button>
+        <button class="news-btn px-6 py-2 rounded-full bg-white text-[#1F8A70] font-semibold" data-category="academics">
+          Academics
+        </button>
+        <button class="news-btn px-6 py-2 rounded-full bg-white text-[#1F8A70] font-semibold" data-category="events">
+          Events
+        </button>
+        <button class="news-btn px-6 py-2 rounded-full bg-white text-[#1F8A70] font-semibold" data-category="scholarships">
+          Scholarships
+        </button>
+      </div>
+  
+  
+      <!-- News Grid -->
+      <div id="newsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2lg" data-category="academics">
+          <!-- News Item: Academic -->
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGVudCUyMGV4YW18ZW58MHx8MHx8fDA%3D" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">Spring 2026 Admissions Open</h3>
+            <p class="text-gray-300 text-sm mb-2">Applications are now open for undergraduate programs for Spring 2026 semester.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Academics</span>
+          </div>
+        </a>
+  
+  
+        <!-- News Item: Event -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="events">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://uot.edu.pk/storage/photos/shares/News/News-2024-10-05-2-1.jpeg" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">Guest Lecture on AI Trends</h3>
+            <p class="text-gray-300 text-sm mb-2">The department hosts a lecture on AI and Machine Learning trends in 2026.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Events</span>
+          </div>
+        </a>
+  
+  
+        <!-- News Item: Scholarship -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="scholarships">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://media.istockphoto.com/id/2223537951/photo/searching-for-education-scholarships-and-funding.webp?s=1024x1024&w=is&k=20&c=XtJTm5YRDY-MX5OPDO0_W1PnkFzX6BXKX-H816yoCag=" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">HEC Scholarships Announced</h3>
+            <p class="text-gray-300 text-sm mb-2">Meritorious students can now apply for new HEC scholarships.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Scholarships</span>
+          </div>
+        </a>
+        
+        <!-- News Item: Academic -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="academics">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://www.cs.miami.edu/lab/IMG_7756.JPG" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">New CS Lab Opened for AI Research</h3>
+            <p class="text-gray-300 text-sm mb-2">CS department inaugurates AI and Robotics research lab.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Academics</span>
+          </div>
+        </a>
+  
+  
+        <!-- News Item: Scholarship -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="scholarships">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://media.istockphoto.com/id/1872637136/photo/uae-dirham-money-finance-education-university-student-loan.webp?a=1&b=1&s=612x612&w=0&k=20&c=BLCGeCjrXGes5CI-Fn4JPxXy9cn8uhfzOUkLHqskx9k=" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">BEEF Scholarships Announced</h3>
+            <p class="text-gray-300 text-sm mb-2">Meritorious students can now apply for new HEC scholarships.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Scholarships</span>
+          </div>
+        </a>
+        
+        <!-- News Item: Academic -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="academics">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://fit.cvut.cz/veda-a-vyzkum/laboratore/hardwarova-dilna-a-laborator/vybaveni/1535/image-thumb__1535__Block1Image/hwlab-4.2bb7362e.jpg" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">New Lab Opened for Research</h3>
+            <p class="text-gray-300 text-sm mb-2">CS department inaugurates AI and Robotics research lab.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Academics</span>
+          </div>
+        </a>
+  
+           <!-- News Item: Scholarship -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="scholarships">
+            <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+              <img src="https://nwc.education/wp-content/uploads/2024/09/best-Scholarships-for-Pakistani-Students-to-Study-Abroad.jpg" class="w-full h-48 object-cover rounded-xl mb-4">
+              <h3 class="text-xl font-bold text-[#1F8A70] mb-2">Abroad undergradute Scholarship</h3>
+              <p class="text-gray-300 text-sm mb-2">Intermedium students can now apply for new HEC recognize abroad scholarships.</p>
+              <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Scholarships</span>
+            </div>
+        </a>
+  
+        <!-- News Item: Event -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-2lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="events">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://uot.edu.pk/storage/uploads/news/2024/04/04/7f85ffe1-14c2-4433-a736-56408bfe8c57.jpg" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">Guest Lecture on AI Trends</h3>
+            <p class="text-gray-300 text-sm mb-2">The department hosts a lecture on AI and Machine Learning trends in 2026.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Events</span>
+          </div>
+        </a>  
+  
+  
+        <!-- News Item: Scholarship -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="scholarships">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://media.istockphoto.com/id/187356705/photo/applying-for-scholarship.webp?a=1&b=1&s=612x612&w=0&k=20&c=GRFqqvGztfSjYOF6QVVk-PS86R1AvxzPmpTWwaeErFs=" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">HEC NEED Base Scholarships Announced</h3>
+            <p class="text-gray-300 text-sm mb-2">Meritorious students can now apply for new HEC scholarships.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Scholarships</span>
+          </div>
+        </a> 
+  
+          <!-- News Item: Event -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-2lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="events">
+            <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGazWUA1eDk9MuV8guOxI7pHuft0C4v3EtFw&s" class="w-full h-48 object-cover rounded-xl mb-4">
+              <h3 class="text-xl font-bold text-[#1F8A70] mb-2">Guest Lecture on Enterpenurship</h3>
+              <p class="text-gray-300 text-sm mb-2">The department hosts a lecture business models and trends in 2026.</p>
+              <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Events</span>
+            </div>
+        </a> 
+
+          <!-- News Item: Academic -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="academics">
+            <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+              <img src="https://compsci.csuci.edu/degrees/bsme/images/labs-1.jpg" class="w-full h-48 object-cover rounded-xl mb-4">
+              <h3 class="text-xl font-bold text-[#1F8A70] mb-2">CS Medium computer Lab2 Opened for all departments</h3>
+              <p class="text-gray-300 text-sm mb-2">CS computer lab is been opened for all departments for accompalished and take AI master courses and practicals</p>
+              <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Academics</span>
+            </div>
+        </a>
+  
+        <!-- News Item: Academic -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="academics">
+          <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+            <img src="https://www.it.unlv.edu/sites/default/files/styles/830_width/public/sites/default/files/assets/computer-labs/computer-labs-tbe-b311.jpg?itok=e8iPW1PQ" class="w-full h-48 object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-[#1F8A70] mb-2">CS Hardware Lab Lab</h3>
+            <p class="text-gray-300 text-sm mb-2">CS department inaugurates AI and Robotics research lab.</p>
+            <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Academics</span>
+          </div>
+        </a>
+  
+           <!-- News Item: Event -->
+        <a href="#" class="news-item bg-[#132B3C] rounded-2xl p-5 shadow-2lg hover:cursor-pointer hover:scale-110 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl" data-category="events">
+            <div class="bg-[#132B3C] rounded-2xl p-5 shadow-lg"> <!-- Removed 'news-item' class from here -->
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGM-WetOfZd4oYj_ofDicFeqGX4KKfKCvQ9Q&s" class="w-full h-48 object-cover rounded-xl mb-4">
+              <h3 class="text-xl font-bold text-[#1F8A70] mb-2">Session Lecture on Abroad Scholarship</h3>
+              <p class="text-gray-300 text-sm mb-2">The department hosts a lecture on achieving abroad scholarships for undergraduate and graduate/master in 2026.</p>
+              <span class="inline-block bg-[#1F8A70] text-white text-xs px-3 py-1 rounded-full">Events</span>
+            </div>
+        </a> 
+  
+      </div>
+    </div>
+  </section>
+
+
+
+   <!-- Footer (Dark Mode) -->
+  <footer id="footer"></footer>
+
+  <!-- ================= NEWS FILTER SCRIPT ================= -->
+  <script src="Assets/main.js"></script>
+  <script>
+    const buttons = document.querySelectorAll('#newsButtons .news-btn');
+    // FIX: Select only the <a> tags with class 'news-item', not the inner divs
+    const newsItems = document.querySelectorAll('#newsContainer .news-item');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+
+        // Remove active styles from all buttons
+        buttons.forEach(btn => {
+          btn.classList.remove('bg-[#1F8A70]', 'text-white');
+          btn.classList.add('bg-white', 'text-[#1F8A70]');
+        });
+
+        // Add active style to clicked button
+        button.classList.add('bg-[#1F8A70]', 'text-white');
+        button.classList.remove('bg-white', 'text-[#1F8A70]');
+
+        // Show/hide news items
+        const category = button.dataset.category;
+        newsItems.forEach(item => {
+          // FIX: Check the data-category on the <a> tag
+          if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Initialize: show all news
+    document.querySelector('[data-category="all"]').click();
+  </script>
+</body>
+</html>
