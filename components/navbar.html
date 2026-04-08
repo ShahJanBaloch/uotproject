@@ -1,12 +1,11 @@
-<!-- Navigation Navbar -->
-<nav id="navbar" class=" fixed top-[15px] left-0 right-0 pl-[30px] z-50 transition-all duration-300 py-4 shadow-md w-auto">
+<nav id="navbar" class="fixed pl-[10px] pr-[10px] top-[15px] left-0 right-0 md:pl-[30px] z-50 transition-all duration-300 py-4 shadow-md w-auto">
   <!-- Navigation Navbar -->
-  <div class="container bg-white backdrop-blur-xl border border-white/20 rounded-full px-[80px] py-3  flex items-center justify-between shadow-lg shadow-black/5">
-    <div class="flex items-center justify-between">
+  <div class="container bg-white backdrop-blur-xl border border-white/20 rounded-full px-[50px] py-3 flex items-center justify-between hadow-lg shadow-black/5">
+    <div class="flex">
       <!-- Logo -->
       <div class="flex items-center gap-3 cursor-pointer group" onclick="window.location.href='index.html'">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRquzDj9bPPmLMWX8vLTDjy4yTtaPiID0Rbcg&s" alt="UoT Logo"
-          class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110" />
+        <img src="../images/uotlogo.png" alt="UoT Logo"
+          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         <div class="hidden md:flex flex-col leading-none">
           <span class="text-lg font-bold text-brand-teal tracking-tight">University of Turbat</span>
         </div>
@@ -138,19 +137,19 @@
                     class="block py-2 text-brand-teal hover:text-brand-gold font-bold text-lg">Admission Cell</a>
                 </div>
             </div>
-          </div>           
-        </div>
+        </div>           
       </div>
+    </div>
 
       <!-- CTA -->
-      <div class="flex items-center gap-5">
+      <div class="flex items-center justify-between gap-5">
         <a href="#"
           class="hidden md:flex text-sm font-bold text-brand-teal hover:text-brand-gold transition-colors">Portal
           Login</a>
         <a href="faculties.html"
-          class="font-bold bg-brand-teal lg:bg-brand-teal hover:bg-brand-darkTeal text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-brand-teal/20 flex items-center gap-2 group">
-          Apply Now
-          <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+          class=" w-13 h-7 font-bold bg-brand-teal lg:bg-brand-teal hover:bg-brand-darkTeal text-white md:px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-brand-teal/20 flex items-center gap-2 group">
+            Apply
+          <i data-lucide="arrow-right" class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
         </a>
         <button onclick="toggleMobileMenu()" class="xl:hidden text-brand-teal">
           <i data-lucide="menu" class="w-6 h-6"></i>
