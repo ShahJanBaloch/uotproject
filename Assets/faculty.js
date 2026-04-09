@@ -7,14 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!deptKey) return;
 
     // Use absolute path from root, or relative. Since we are in departments/xx/
-    fetch('/Assets/data/faculty.json')
+    fetch('/data/faculty.json')
       .then(res => res.json())
       .then(data => {
+          console.log(data);
         let deptObj = data.departments[deptKey];
         if (!deptObj) {
             // Also try to match directly if format is weird
             deptObj = Object.values(data.departments).find(d => d.name.toLowerCase().includes(deptKey.toLowerCase()));
         }
+          
 
         if (!deptObj) {
             grid.innerHTML = '<p class="text-gray-500 col-span-fulltext-center text-center">No faculty members found for this department.</p>';
