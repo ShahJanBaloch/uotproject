@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!deptKey) return;
 
     // Use absolute path from root, or relative. Since we are in departments/xx/
-    fetch('../Assets/data/faculty.json')
+    fetch('../../Assets/data/faculty.json')
       .then(res => res.json())
       .then(data => {
         let deptObj = data.departments[deptKey];
