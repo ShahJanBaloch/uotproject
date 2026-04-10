@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Relative path to faculty.json
-    fetch('Assets/data/faculty.json')
+    fetch('../Assets/data/faculty.json')
         .then(res => {
             if (!res.ok) throw new Error("Failed to load faculty data.");
             return res.json();
