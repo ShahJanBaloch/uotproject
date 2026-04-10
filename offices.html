@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Offices - University of Turbat</title>
+  <link rel="icon" href="images/uotlogo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: "#0F4C5C",
+              darkTeal: "#093642",
+              gold: "#E0B354",
+              red: "#9A031E",
+              sand: "#F5F5F4",
+              white: "#FFFFFF",
+            },
+          },
+          fontFamily: {
+            sans: ["Outfit", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
+          },
+          animation: {
+            "fade-in-up": "fadeInUp 0.6s ease-out forwards",
+          },
+          keyframes: {
+            fadeInUp: {
+              "0%": { opacity: "0", transform: "translateY(24px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- Background Pattern -->
+  <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+    style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar"></nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen mt-40 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+    
+            <!-- Header -->
+            <div class="text-center mb-20">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">
+                Administration
+                </span>
+                <h1 class="text-2xl md:text-5xl font-serif text-brand-darkTeal mb-4">
+                Offices (Admin Block)
+                </h1>
+                <p class="text-xl text-gray-500 font-light text-brand-teal">
+                Administration offices University of Turbat
+                </p>
+            </div>
+
+            <!--  DIRECTORATE OF IT  -->
+            <section id="directorate-it" class="mb-20">
+              <h2 class="text-2xl md:text-4xl font-bold font-serif text-brand-gold text-center mb-3 pl-4">
+                  Directorate of Information Technology
+              </h2>
+
+              <p class="md:pl-[300px] text-gray-600 mb-8 max-w-4xl">
+                  The Directorate of Information Technology (DIT) is responsible for managing and maintaining
+                  the university’s digital infrastructure, ensuring secure, efficient, and innovative IT
+                  services for students, faculty, and administrative departments. It plays a key role in
+                  supporting academic and operational excellence through technology.
+              </p>
+
+              <div class="bg-white rounded-3xl shadow-lg p-8 items-center md:w-[700px] md:ml-[250px] hover:shadow-xl transition">
+                  <div class="gap-8">
+
+                      <!-- Office Details -->
+                      <div class="mb-6">
+                          <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Office Details</h3>
+                          <p class="text-gray-600 mb-2"><strong>Location:</strong> 2nd Floor / Admin Block</p>
+                          <p class="text-gray-600 mb-2"><strong>Email:</strong> it@uot.edu.pk</p>
+                          <p class="text-gray-600 mb-2"><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+                      </div>
+
+                      <!-- Services -->
+                      <div class="mb-6">
+                          <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Core Services</h3>
+                          <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                              <li>Network & Internet Management</li>
+                              <li>University Website & Portal Maintenance</li>
+                              <li>Software Development & Support</li>
+                              <li>IT Helpdesk Services</li>
+                              <li>Data Security & Backup Solutions</li>
+                          </ul>
+                      </div>
+
+                      <!-- Facilities -->
+                      <div>
+                          <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Facilities</h3>
+                          <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                              <li>High-speed campus Wi-Fi</li>
+                              <li>Computer labs & smart classrooms</li>
+                              <li>Digital learning platforms (LMS)</li>
+                              <li>Server & cloud infrastructure</li>
+                              <li>24/7 system monitoring</li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </div>
+            </section>
+                    
+            <!--  TRANSPORT OFFICE  -->
+            <section id="transportation" class="mb-20">
+                <h2 class="text-3xl font-bold font-serif text-brand-darkTeal text-center mb-3 pl-4">
+                Transport Office
+                </h2>
+                <p class="md:pl-[300px] text-gray-600 mb-8 max-w-4xl">
+                The Transport Office manages safe and reliable transportation facilities for students,
+                faculty, and staff. It ensures smooth daily commuting between the university and
+                surrounding areas.
+                </p>
+        
+                <div class="bg-white rounded-3xl shadow-lg p-8 items-center md:w-[700px] md:ml-[250px] hover:shadow-xl transition">
+                <div class="gap-8">
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Office Details</h3>
+                    <p class="text-gray-600 mb-2"><strong>Location:</strong> Main Gate</p>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> transport@uot.edu.pk</p>
+                    <p class="text-gray-600 mb-2"><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+                    </div>
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Facilities</h3>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Bus service for students & staff</li>
+                        <li>Route management system</li>
+                        <li>Safe & punctual transport</li>
+                        <li>Emergency support</li>
+                    </ul>
+                    </div>
+        
+                </div>
+                </div>
+            </section>
+        
+            <!-- HOSTEL OFFICE -->
+            <section id="hostel" class="mb-20">
+                <h2 class="text-3xl font-serif font-bold text-brand-darkTeal mb-3 pl-4 text-center">
+                Hostel Office
+                </h2>
+                <p class="text-gray-600 md:pl-[300px] mb-8 max-w-4xl">
+                The Hostel Office provides accommodation facilities for students with a safe,
+                comfortable, and disciplined living environment within the university premises.
+                </p>
+        
+                <div class="bg-white rounded-3xl shadow-lg p-8 items-center md:w-[700px] md:ml-[250px] hover:shadow-xl transition">
+                <div class="gap-8">
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Office Details</h3>
+                    <p class="text-gray-600 mb-2"><strong>Location boys Hostel:</strong>  Near New Accademic block</p>
+                    <p class="text-gray-600 mb-2"><strong>Location girls Hostel:</strong>  Near Staff colony</p>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> hostel@uot.edu.pk</p>
+                    <p class="text-gray-600 mb-2"><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+                    </div>
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Facilities</h3>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Separate hostels for boys & girls</li>
+                        <li>24/7 security</li>
+                        <li>Mess and dining services</li>
+                        <li>Internet & study areas</li>
+                    </ul>
+                    </div>
+        
+                </div>
+                </div>
+            </section>
+        
+            <!--  EXAMINATION OFFICE -->
+            <section id="examination" class="mb-20">
+                <h2 class="text-3xl font-serif text-center font-bold text-brand-darkTeal mb-3 pl-4">
+                Examination Office
+                </h2>
+                <p class="text-gray-600 md:pl-[300px] mb-8 max-w-4xl">
+                The Examination Office oversees all academic assessments, including exams,
+                results, transcripts, and certifications, ensuring transparency and accuracy.
+                </p>
+        
+                <div class="bg-white rounded-3xl shadow-lg p-8 items-center md:w-[700px] md:ml-[250px] hover:shadow-xl transition">
+                <div class="gap-8">
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Office Details</h3>
+                    <p class="text-gray-600 mb-2"><strong>Location:</strong> 2nd Flood / Admin Block</p>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> exams@uot.edu.pk</p>
+                    <p class="text-gray-600 mb-2"><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+                    </div>
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Facilities</h3>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Result processing & publication</li>
+                        <li>Transcript issuance</li>
+                        <li>Exam scheduling</li>
+                        <li>Degree verification</li>
+                    </ul>
+                    </div>
+        
+                </div>
+                </div>
+            </section>
+        
+            <!-- FINANCE OFFICE  -->
+            <section id="finance" class="mb-20">
+                <h2 class="text-3xl font-bold font-serif text-center text-brand-darkTeal mb-3 pl-4">
+                Finance Office
+                </h2>
+                <p class="text-gray-600 md:pl-[300px] mb-8 max-w-4xl">
+                The Finance Office manages all financial operations of the university, including
+                fee collection, budgeting, and financial planning.
+                </p>
+        
+                <div class="bg-white rounded-3xl shadow-lg p-8 items-center md:w-[700px] md:ml-[250px] hover:shadow-xl transition">
+                <div class="gap-8">
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Office Details</h3>
+                    <p class="text-gray-600 mb-2"><strong>Location:</strong> 1st floor / Admin Block</p>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> finance@uot.edu.pk</p>
+                    <p class="text-gray-600 mb-2"><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+                    </div>
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Facilities</h3>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Fee submission & records</li>
+                        <li>Scholarship management</li>
+                        <li>Payroll services</li>
+                        <li>Budget planning</li>
+                    </ul>
+                    </div>
+        
+                </div>
+                </div>
+            </section>
+
+                <!-- Admission Cell  -->
+            <section id="finance" class="mb-20">
+                <h2 class="text-3xl font-bold font-serif text-center text-brand-darkTeal mb-3 pl-4">
+                Admissions cell
+                </h2>
+                <p class="text-gray-600 md:pl-[300px] mb-8 max-w-4xl">
+                The Finance Office manages all financial operations of the university, including
+                fee collection, budgeting, and financial planning.
+                </p>
+        
+                <div class="bg-white rounded-3xl shadow-lg p-8 items-center md:w-[700px] md:ml-[250px] hover:shadow-xl transition">
+                <div class="gap-8">
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Office Details</h3>
+                    <p class="text-gray-600 mb-2"><strong>Location:</strong> Main Gate</p>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> admissioncell@uot.edu.pk</p>
+                    <p class="text-gray-600 mb-2"><strong>Phone:</strong> +92-XXX-XXXXXXX</p>
+                    </div>
+        
+                    <div>
+                    <h3 class="text-xl font-semibold text-brand-darkTeal mb-3">Facilities</h3>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Fee submission & records</li>
+                        <li>Scholarship management</li>
+                        <li>Payroll services</li>
+                        <li>Budget planning</li>
+                    </ul>
+                    </div>
+        
+                </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="/Assets/main.js"></script>
+  <script src="/Assets/profile.js" defer></script>
+</body>
+</html>

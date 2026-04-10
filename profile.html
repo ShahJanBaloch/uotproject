@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Faculty Profile - University of Turbat</title>
+  <link rel="shortcut icon" href="images/uotlogo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: "#0F4C5C",
+              darkTeal: "#093642",
+              gold: "#E0B354",
+              red: "#9A031E",
+              sand: "#F5F5F4",
+              white: "#FFFFFF",
+            },
+          },
+          fontFamily: {
+            sans: ["Outfit", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
+          },
+          animation: {
+            "fade-in-up": "fadeInUp 0.6s ease-out forwards",
+          },
+          keyframes: {
+            fadeInUp: {
+              "0%": { opacity: "0", transform: "translateY(24px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .profile-section { opacity: 0; }
+    .profile-section.loaded { opacity: 1; transition: opacity 0.5s ease; }
+    .edu-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+    .edu-item:last-child { border-bottom: none; }
+    .pub-item { padding: 10px 14px; background: #f9f9f9; border-left: 3px solid #E0B354; border-radius: 4px; font-size: 0.9rem; }
+  </style>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- Background Pattern -->
+  <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+    style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar"></nav>
+
+
+  <!-- Profile Section -->
+  <section class="profile-section relative z-10 max-w-5xl mx-auto px-6 mt-36 mb-20">
+
+    <!-- Hero Card -->
+    <div class="bg-white rounded-3xl shadow-xl overflow-hidden animate-fade-in-up">
+
+      <!-- Top Banner -->
+      <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal h-28 relative">
+        <div class="absolute -bottom-16 left-8 md:left-12">
+          <div class="w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden bg-gray-200">
+            <img id="image"
+              src="https://ui-avatars.com/api/?name=Faculty&background=0F4C5C&color=fff&size=128"
+              alt="Faculty Photo"
+              class="w-full h-full object-cover"
+              onerror="this.src='https://ui-avatars.com/api/?name=Faculty'">
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Info -->
+      <div class="pt-20 px-8 md:px-12 pb-8">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h1 id="name" class="text-3xl md:text-4xl font-bold text-brand-darkTeal font-serif"></h1>
+            <p id="designation" class="text-brand-teal font-semibold text-lg mt-1"></p>
+            <p id="department" class="text-gray-500 mt-1 text-sm flex items-center gap-1">
+              <i data-lucide="building-2" class="w-4 h-4"></i>
+              <span id="dept-text"></span>
+            </p>
+            <a id="email-link" href="#" class="text-sm text-gray-600 mt-2 inline-flex items-center gap-2 hover:text-brand-teal transition">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span id="email"></span>
+            </a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <a href="javascript:history.back()"
+              class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-teal text-white rounded-full text-sm font-bold hover:bg-brand-darkTeal transition shadow-md">
+              <i data-lucide="arrow-left" class="w-4 h-4"></i>
+              Back to Faculty
+            </a>
+            <a id="profileUrl" href="#" target="_blank"
+              class="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-brand-teal text-brand-teal rounded-full text-sm font-bold hover:bg-brand-teal hover:text-white transition">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              Official UoT Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full h-px bg-gray-100 mt-8 mb-8"></div>
+
+        <!-- Info Grid -->
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <!-- About -->
+          <div id="bio-section" class="md:col-span-3">
+            <h2 class="text-lg font-bold text-brand-darkTeal mb-3 flex items-center gap-2">
+              <i data-lucide="user" class="w-5 h-5 text-brand-gold"></i>
+              About
+            </h2>
+            <p id="bio" class="text-gray-600 leading-relaxed text-sm bg-gray-50 rounded-xl p-4"></p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Education -->
+          <div id="education-section">
+            <h2 class="text-lg font-bold text-brand-darkTeal mb-4 flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-gold"></i>
+              Education & Qualifications
+            </h2>
+            <div id="education" class="text-gray-700 text-sm space-y-1"></div>
+          </div>
+
+          <!-- Publications -->
+          <div id="publications-section">
+            <h2 class="text-lg font-bold text-brand-darkTeal mb-4 flex items-center gap-2">
+              <i data-lucide="book-open" class="w-5 h-5 text-brand-gold"></i>
+              Publications & Research
+            </h2>
+            <div id="publications" class="text-gray-700 text-sm space-y-2"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="Assets/main.js"></script>
+  <script src="Assets/profile.js" defer></script>
+</body>
+</html>

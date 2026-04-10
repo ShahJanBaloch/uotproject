@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Economics - Course List - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { teal: '#0F4C5C', darkTeal: '#093642', gold: '#E0B354', red: '#9A031E', sand: '#F5F5F4' } }, fontFamily: { sans: ['Outfit', 'sans-serif'], serif: ['Playfair Display', 'serif'] } } } }
+    </script>
+</head>
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    
+    <!-- Navigation bar  -->
+    <nav id="navbar"></nav>
+    
+    <!-- BS Economics Courses Curriculum -->
+    <main class="min-h-screen pt-40 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Curriculum</span>
+                <h1 class="text-4xl md:text-5xl font-serif text-brand-darkTeal mb-4">Study Plan</h1>
+                <p class="text-xl text-gray-500 font-light">For BS Economics Department</p>
+            </div>
+            <div id="courses-container" class="max-w-4xl mx-auto space-y-8">
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 1</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">6 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Functional English</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Ideology and Constitution of Pakistan</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">2 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Islamic Studies / Ethics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">2 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Introduction to Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Mathematics for Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Principles of Statistics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 2</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">5 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Microeconomics-I</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Macroeconomics-I</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Expository Writing</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Applied Statistics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Introduction to Sociology</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 3</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">5 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Microeconomics-II</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Macroeconomics-II</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Mathematical Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Econometrics-I</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Development Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 4</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">5 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">International Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Monetary Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Econometrics-II</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Public Finance</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Agricultural Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 5</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">5 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Labour Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Environmental Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Industrial Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">History of Economic Thought</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Elective-I</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 6</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">5 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Health Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Economics of Pakistan</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Regional Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Elective-II</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Research Methods in Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 7</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">4 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Behavioural Economics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Elective-III</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Elective-IV</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Research Thesis / Project</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">6 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-lg transition-all">
+                    <div class="bg-brand-darkTeal p-6 flex justify-between items-center text-white">
+                        <h3 class="font-serif text-xl font-bold">Semester 8</h3>
+                        <span class="bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">4 Courses</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Advanced Macroeconomics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Applied Econometrics</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Elective-V</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-4 border-b border-gray-50 last:border-0 last:pb-0">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="font-bold text-gray-700">Seminar & Field Study</span>
+                                </div>
+                                <span class="text-sm text-gray-400 bg-gray-50 px-2 py-1 rounded">3 CH</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Detailed Fee Breakdown Section -->
+         <section id="detailed-fee-structure" class="scroll-mt-32 border-t border-gray-200 pt-16 mt-20">
+            <div class="text-center mb-12">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Financial Details</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-brand-darkTeal mb-4">Detailed Fee Structure</h2>
+                <p class="text-xl text-gray-500 font-light">Complete breakdown of BS Economics department</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-12 ml-8">
+
+                <!-- 1st Semester Fee -->
+                <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5 flex">
+                            <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">1st</span> 
+                            <h3 class="text-xl font-bold pl-2">Semester Fee Structure</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody class="text-gray-700">
+                                    <tr class="border-b"><td class="p-4">Admission Fee (One time)</td><td class="p-4 text-right">2,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Registration Fee (One time)</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Tuition Fee</td><td class="p-4 text-right">11,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Library Fee</td><td class="p-4 text-right">500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Security Fee (Refundable)</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Computer Lab Fee</td><td class="p-4 text-right">500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Sports Fee</td><td class="p-4 text-right">500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Examination Fee</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">ID Card</td><td class="p-4 text-right">300</td></tr>
+                                    <tr class="bg-brand-sand font-bold">
+                                        <td class="p-4">Total</td>
+                                        <td class="p-4 text-right">17,800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- 2nd–8th Semester -->
+                <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5 flex">
+                            <span class="bg-brand-gold text-brand-darkTeal w-14 h-11 rounded-2xl flex items-center justify-center text-sm">2nd–8th</span> 
+                            <h3 class="text-xl font-bold p-2">Semester Fee</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody class="text-gray-700">
+                                    <tr class="border-b"><td class="p-4">Tuition Fee</td><td class="p-4 text-right">11,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Library Fee</td><td class="p-4 text-right">500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Computer Lab Fee</td><td class="p-4 text-right">500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Sports Fee</td><td class="p-4 text-right">500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Examination Fee</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr class="bg-brand-sand font-bold">
+                                        <td class="p-4">Total Per Semester</td>
+                                        <td class="p-4 text-right">13,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+            
+                </div>
+
+                <!-- Transport -->
+                <div class="w-[95%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Transport Fee</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody>
+                                    <tr class="border-b"><td class="p-4">Long Route</td><td class="p-4 text-right">4,000</td></tr>
+                                    <tr><td class="p-4">Short Route</td><td class="p-4 text-right">3,500</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- Hostel -->
+                <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Hostel Fee</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody>
+                                    <tr class="border-b"><td class="p-4">Admission Fee (One time)</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr><td class="p-4">Hostel Rent (Per Semester)</td><td class="p-4 text-right">2,500</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- Examination -->
+                <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Examination & Misc Charges</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody>
+                                    <tr class="border-b"><td class="p-4">DMC</td><td class="p-4 text-right">200</td></tr>
+                                    <tr class="border-b"><td class="p-4">Transcript</td><td class="p-4 text-right">500 / 1000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Degree</td><td class="p-4 text-right">2000 - 6000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Verification</td><td class="p-4 text-right">500 / 800</td></tr>
+                                    <tr class="border-b"><td class="p-4">Rechecking</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Registration</td><td class="p-4 text-right">1,500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Repeat / Improvement</td><td class="p-4 text-right">2,000</td></tr>
+                                    <tr><td class="p-4">Re-admission / Freeze</td><td class="p-4 text-right">1,000</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- footer  -->
+    <footer id="footer"></footer>
+    <script src="../../Assets/main.js"></script>
+</body>
+</html>

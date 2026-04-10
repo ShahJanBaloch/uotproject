@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay -->
+    <nav id="navbar"></nav>
+    <div id="mobileMenu"></div>
+
+
+
+    <main class="min-h-screen pt-32 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Curriculum</span>
+                <h1 class="text-4xl md:text-5xl font-serif text-brand-darkTeal mb-4">Study Plan</h1>
+                <p id="course-subtitle" class="text-xl text-gray-500 font-light">For Balochi Language and Culture (Fall 2026)</p>
+            </div>
+
+            <!-- Program Content Sections -->
+            <div id="program-content-container" class="max-w-4xl mx-auto space-y-24">
+                <div class="space-y-10">    
+
+                    <!-- BS Balochi (IBLC) PROGRAM  -->
+                    <!-- Semester 1 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                                First Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                            <table class="w-full min-w-[600px]">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6 text-left">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="px-6 py-3 text-center">1</td><td>بلوچی وانگ ءُنبیسگ</td><td>IBLC-302</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">2</td><td>اسلامیات (لازمی)</td><td>IBLC-303</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">3</td><td>انگلشں (01)</td><td>IBLC-304</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">4</td><td>بلوچی داستان</td><td>IBLC-305</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">5</td><td>لبزانکی تہر</td><td>IBLC-301</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Semester 2 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 flex items-center justify-center rounded-full text-sm">2</span>
+                                Second Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                            <table class="w-full min-w-[600px]">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6 text-left">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="px-6 py-3 text-center">1</td><td>انگلشں (02)</td><td>IBLC-306</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">2</td><td>مطالعہ پاکستان</td><td>IBLC-307</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">3</td><td>بلوچی گیدی شایری</td><td>IBLC-308</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">4</td><td>بلوچ تاریخ ءُ دود ءُ ربیدگ</td><td>IBLC-309</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">5</td><td>نبشتہ رہبند</td><td>IBLC-310</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">6</td><td>کُہنیں رِدینک</td><td>IBLC-311</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Semester 3 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 flex items-center justify-center rounded-full text-sm">3</span>
+                                Third Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                        <table class="w-full min-w-[600px]">
+                            <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                <tr>
+                                    <th class="py-4 px-6 text-center">#</th>
+                                    <th class="py-4 px-6 text-left">Course Title</th>
+                                    <th class="py-4 px-6">Code</th>
+                                    <th class="py-4 px-6 text-center">Theory</th>
+                                    <th class="py-4 px-6 text-center">Lab</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="px-6 py-3 text-center">1</td><td>کمپیوٹر 1</td><td>IBLC-312</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">2</td><td>بلوچی گیدی کسّہ</td><td>IBLC-313</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">3</td><td>آزمانک ءِ اِزم</td><td>IBLC-314</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">4</td><td>بلوچی دَرَکسہی لبزانک</td><td>IBLC-315</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">5</td><td>بلوچی کلاسیکل شاعری</td><td>IBLC-316</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+
+                    <!-- Semester 4 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold w-8 h-8 flex items-center justify-center rounded-full text-sm text-brand-darkTeal">4</span>
+                                Fourth Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                        <table class="w-full min-w-[600px]">
+                            <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                <tr>
+                                    <th class="py-4 px-6 text-center">#</th>
+                                    <th class="py-4 px-6 text-left">Course Title</th>
+                                    <th class="py-4 px-6">Code</th>
+                                    <th class="py-4 px-6 text-center">Theory</th>
+                                    <th class="py-4 px-6 text-center">Lab</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="px-6 py-3 text-center">1</td><td>فلسفہ</td><td>IBLC-317</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">2</td><td>نفسیات</td><td>IBLC-318</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">3</td><td>بلوچی نیم عہدی شاعری</td><td>IBLC-319</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">4</td><td>جام دُرکءِزندءُازم</td><td>IBLC-320</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">5</td><td>کسمانکءُبلوچی کسمانک</td><td>IBLC-321</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                <tr><td class="px-6 py-3 text-center">6</td><td>رجانکاری</td><td>IBLC-322</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+
+                    <!-- Semester 5 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">5</span>
+                                Fifth Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                            <table class="w-full min-w-[600px]">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6 text-left">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="px-6 py-3 text-center">1</td><td>تژن بچکندءُبلوچی لبزانک</td><td>IBLC-323</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">2</td><td>ناول نویسی</td><td>IBLC-324</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">3</td><td>مُلافاضلءِزِندءُاِزم</td><td>IBLC-325</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">4</td><td>زبان زانتی</td><td>IBLC-326</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">5</td><td>بلوچی نوکیں شاعری</td><td>IBLC-327</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Semester 6 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">6</span>
+                                Sixth Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                            <table class="w-full min-w-[600px]">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6 text-left">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="px-6 py-3 text-center">1</td><td>بلوچی زبان زانتی</td><td>IBLC-328</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">2</td><td>سیدظیورشاہ ھاشمی زِندءُاِزم</td><td>IBLC-329</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">3</td><td>تاکاریءُبلوچی لبزانک</td><td>IBLC-330</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">4</td><td>بلوچی آزمانک</td><td>IBLC-331</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">5</td><td>پولکاری</td><td>IBLC-332</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Semester 7 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">7</span>
+                                Seventh Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                            <table class="w-full min-w-[600px]">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6 text-left">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="px-6 py-3 text-center">1</td><td>نگدکاری،نکدی لیکہءُمؔیل</td><td>IBLC-333</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">2</td><td>بلوچی ناول</td><td>IBLC-334</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">3</td><td>لبزانکیءُزبان زانتی پولکاری</td><td>IBLC-335</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">4</td><td>رجانکاریءُنلوچی لبزانک</td><td>IBLC-336</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">5</td><td>عطاشادءِزندءُاِزم</td><td>IBLC-337</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Semester 8 -->
+                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-center text-white">
+                            <h3 class="font-serif text-2xl font-bold flex items-center gap-3">
+                                <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">8</span>
+                                Eighth Semester
+                            </h3>
+                        </div>
+                        <div class="p-0 overflow-x-auto">
+                            <table class="w-full min-w-[600px]">
+                                <thead class="bg-gray-50 text-xs uppercase text-gray-500">
+                                    <tr>
+                                        <th class="py-4 px-6 text-center">#</th>
+                                        <th class="py-4 px-6 text-left">Course Title</th>
+                                        <th class="py-4 px-6">Code</th>
+                                        <th class="py-4 px-6 text-center">Theory</th>
+                                        <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="px-6 py-3 text-center">1</td><td>چاگردی زبان زانتی</td><td>IBLC-338</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">2</td><td>نوکیں دورءِگچین شاعرانی زِندءُاِزم</td><td>IBLC-339</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">3</td><td>بلوچی لبزانکءُنگدکاری</td><td>IBLC-340</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">4</td><td>منیراحمد بادینیءِزندءُاِزم</td><td>IBLC-341</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr><td class="px-6 py-3 text-center">5</td><td>تھیسز</td><td>IBLC-342</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+             <!-- IBLC 4-Year Fee Structure -->
+            <section id="bs-program" class="scroll-mt-32 border-t border-gray-200 pt-16 mt-20">
+                <div class="text-center mb-12">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Financial Details</span>
+                    <h2 class="text-4xl font-serif text-brand-darkTeal mb-4">IBLC 4-Year Program Fee Structure</h2>
+                    <p class="text-xl text-gray-500 font-light">Faculty of Balochi (IBLC)</p>
+                </div>
+                <!-- fees structure  -->
+                <div class="max-w-4xl mx-auto space-y-12 pl-8">
+
+                    <!-- 1st Semester -->
+                    <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5 flex">
+                            <span class="bg-brand-gold text-brand-darkTeal w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold">1st</span> 
+                            <h3 class="text-xl font-bold pl-3">Semester Fee Structure</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody class="text-gray-700">
+                                    <tr class="border-b">
+                                        <td class="p-4">Admission Fee (One time)</td>
+                                        <td class="p-4 text-right">2,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Registration Fee (One time)</td>
+                                        <td class="p-4 text-right">1,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Tuition Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">11,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Library Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">500</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Security Fee (One time, Refundable)</td>
+                                        <td class="p-4 text-right">1,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Computer Lab Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">500</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Sports Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">500</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Examination Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">1,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Identity Card (One time)</td>
+                                        <td class="p-4 text-right">300</td>
+                                    </tr>
+                            
+                                    <tr class="bg-brand-sand font-bold">
+                                        <td class="p-4">Total Fee for 1st Semester</td>
+                                        <td class="p-4 text-right">17,800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 2nd to 8th Semester -->
+                    <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5 flex">
+                            <span class="bg-brand-gold text-brand-darkTeal w-16 h-10 rounded-2xl flex items-center justify-center text-sm font-bold">2nd–8th</span> 
+                            <h3 class="text-xl font-bold pl-3">Semester Fee</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody class="text-gray-700">
+                                    <tr class="border-b">
+                                        <td class="p-4">Tuition Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">11,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Library Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">500</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Computer Lab Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">500</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Sports Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">500</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-4">Examination Fee (Per Semester)</td>
+                                        <td class="p-4 text-right">1,000</td>
+                                    </tr>
+                            
+                                    <tr class="bg-brand-sand font-bold">
+                                        <td class="p-4">Total Per Semester (2nd to 8th)</td>
+                                        <td class="p-4 text-right">13,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Transport -->
+                    <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Transport Fee</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody>
+                                    <tr class="border-b"><td class="p-4">Long Route</td><td class="p-4 text-right">4,000</td></tr>
+                                    <tr><td class="p-4">Short Route</td><td class="p-4 text-right">3,500</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Hostel -->
+                    <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Hostel Fee</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody>
+                                    <tr class="border-b"><td class="p-4">Admission Fee (One time)</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr><td class="p-4">Hostel Rent (Per Semester)</td><td class="p-4 text-right">2,500</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Examination & Misc -->
+                    <div class="w-[90%] bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Examination & Misc Charges</h3>
+                        </div>
+                        <div class="overflow-x-auto pb-6">
+                            <table class="w-[95%]">
+                                <tbody class="text-gray-700">
+                                    <tr class="border-b"><td class="p-4">DMC</td><td class="p-4 text-right">200</td></tr>
+                                    <tr class="border-b"><td class="p-4">Transcript</td><td class="p-4 text-right">500 / 1,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Degree</td><td class="p-4 text-right">2,000 - 6,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Verification</td><td class="p-4 text-right">500 / 800</td></tr>
+                                    <tr class="border-b"><td class="p-4">Rechecking</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Registration</td><td class="p-4 text-right">1,500</td></tr>
+                                    <tr class="border-b"><td class="p-4">Repeat / Improvement</td><td class="p-4 text-right">2,000</td></tr>
+                                    <tr class="border-b"><td class="p-4">Re-admission</td><td class="p-4 text-right">1,000</td></tr>
+                                    <tr><td class="p-4">Freeze / Unfreeze</td><td class="p-4 text-right">1,000</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="../../Assets/main.js"></script>
+</body>
+</html>

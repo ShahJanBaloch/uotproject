@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Computer Science - Course List - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar"></nav>
+    
+    <!-- Courses and Fees Structure  -->
+    <main class="min-h-screen pt-40 pb-20 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <!-- Program Overview Card -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    
+                    <!-- Content -->
+                    <div class="flex-1">
+                        <h2 class="text-2xs md:text-2xl font-serif font-bold text-brand-darkTeal mb-2">
+                            BS Computer Science (4-Year) Curriculum
+                        </h2>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            The Bachelor of Science in Computer Science program equips students with strong
+                            foundations in programming, software engineering, databases, artificial intelligence,
+                            and networking. It prepares graduates for careers in software development, data science,
+                            cybersecurity, and emerging technologies.
+                        </p>
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="grid grid-cols-2 gap-3 shrink-0 w-full md:w-auto">
+                        
+                        <div class="bg-brand-sand rounded-xl px-4 py-3 text-center">
+                            <div class="text-xs uppercase tracking-wider text-gray-400 mb-0.5">Duration</div>
+                            <div class="font-bold text-brand-darkTeal text-sm">4 Years / 8 Sems</div>
+                        </div>
+
+                        <div class="bg-brand-sand rounded-xl px-4 py-3 text-center">
+                            <div class="text-xs uppercase tracking-wider text-gray-400 mb-0.5">Eligibility</div>
+                            <div class="font-bold text-brand-darkTeal text-sm">
+                                F.Sc / ICS (50% +)
+                            </div>
+                        </div>
+
+                        <div class="bg-brand-sand rounded-xl px-4 py-3 text-center">
+                            <div class="text-xs uppercase tracking-wider text-gray-400 mb-0.5">Total Credits</div>
+                            <div class="font-bold text-brand-darkTeal text-sm">130–136 Credit Hours</div>
+                        </div>
+
+                        <div class="bg-brand-sand rounded-xl px-4 py-3 text-center">
+                            <div class="text-xs uppercase tracking-wider text-gray-400 mb-0.5">Degree Award</div>
+                            <div class="font-bold text-brand-darkTeal text-sm">BSCS (Hons.)</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+              <!-- Program Content Sections -->
+            <div id="program-content-container" class="max-w-4xl mx-auto space-y-16">
+                
+                <section id="bscs-curriculum" class="scroll-mt-32">
+                    <h2 class="text-3xl font-serif text-brand-darkTeal mb-4 border-l-4 border-brand-gold pl-4">BS Computer Science (8 Semesters)</h2>
+                    <p class="text-gray-600 mb-10 text-lg">4-Year Degree Program focusing on algorithmic thinking, modern software development skills, and computing theory.</p>
+
+                    <div class="space-y-10">
+                        <!-- Semester 1 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span> 
+                                    First Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    18 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                    <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                    <th class="py-4 px-6 text-center">#</th>
+                                    <th class="py-4 px-6 text-left">Course Title</th>
+                                    <th class="py-4 px-6 text-center">Credits</th>
+                                    <th class="py-4 px-6 text-center">Theory</th>
+                                    <th class="py-4 px-6 text-center">Lab</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">1</td><td class="font-bold text-brand-darkTeal">Application of ICT</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">2</span></td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">2</td><td class="font-bold text-brand-darkTeal">Application of ICT (Lab)</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">1</span></td><td class="text-center">0</td><td class="text-center text-brand-gold font-bold">1</td></tr>
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">3</td><td class="font-bold text-brand-darkTeal">Discrete Structures</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">3</span></td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">4</td><td class="font-bold text-brand-darkTeal">Functional English</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">3</span></td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">5</td><td class="font-bold text-brand-darkTeal">Applied Physics</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">2</span></td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">6</td><td class="font-bold text-brand-darkTeal">Applied Physics (Lab)</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">1</span></td><td class="text-center">0</td><td class="text-center text-brand-gold font-bold">1</td></tr>
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="py-4 px-6 text-center">7</td><td class="font-bold text-brand-darkTeal">Islamic Studies / Ethics</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">2</span></td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    <tr><td class="py-4 px-6 text-center">8</td><td class="font-bold text-brand-darkTeal">Ideology & Constitution of Pakistan</td><td class="text-center"><span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md font-bold">2</span></td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 2 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span> 
+                                    Second Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    17 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                        <tr>
+                                            <th class="py-4 px-6 text-center">#</th>
+                                            <th class="py-4 px-6 text-left">Course Title</th>
+                                            <th class="py-4 px-6 text-center">Credits</th>
+                                            <th class="py-4 px-6 text-center">Theory</th>
+                                            <th class="py-4 px-6 text-center">Lab</th>
+                                        </tr>
+                                    <tbody class="text-gray-700">
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">1</td><td class="font-bold text-brand-darkTeal">Programming Fundamentals</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">3</span></td><td class="text-center">3</td><td>0</td></tr>
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">2</td><td class="font-bold text-brand-darkTeal">Programming Fundamentals (Lab)</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">1</span></td><td>0</td><td class="text-brand-gold font-bold">1</td></tr>
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">3</td><td class="font-bold text-brand-darkTeal">Database Systems</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">3</span></td><td>3</td><td>0</td></tr>
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">4</td><td class="font-bold text-brand-darkTeal">Database Systems (Lab)</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">1</span></td><td>0</td><td class="text-brand-gold font-bold">1</td></tr>
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">5</td><td class="font-bold text-brand-darkTeal">Digital Logic Design</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">2</span></td><td>2</td><td>0</td></tr>
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">6</td><td class="font-bold text-brand-darkTeal">Digital Logic Design (Lab)</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">1</span></td><td>0</td><td class="text-brand-gold font-bold">1</td></tr>
+                                    
+                                    <tr class="border-b hover:bg-brand-sand/40"><td class="text-center">7</td><td class="font-bold text-brand-darkTeal">Expository Writing</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">3</span></td><td>3</td><td>0</td></tr>
+                                    
+                                    <tr><td class="text-center">8</td><td class="font-bold text-brand-darkTeal">Calculus & Analytical Geometry</td><td class="text-center"><span class="bg-brand-teal/10 px-3 py-1 rounded-md font-bold">3</span></td><td>3</td><td>0</td></tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 3 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span> 
+                                    Third Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    17 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                            <th class="py-4 px-6 text-center">#</th>
+                                            <th class="py-4 px-6 text-left">Course Title</th>
+                                            <th class="py-4 px-6 text-center">Credits</th>
+                                            <th class="py-4 px-6 text-center">Theory</th>
+                                            <th class="py-4 px-6 text-center">Lab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                        <tr><td class="py-4 px-6 text-center">1</td><td>Object Oriented Programming</td><td class="text-center">4</td><td class="text-center">3</td><td class="text-center">1</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">2</td><td>Computer Networks</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">3</td><td>Probability & Statistics</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">4</td><td>Software Engineering</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">5</td><td>Linear Algebra</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 4 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">4</span> 
+                                    Fourth Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    16 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                            <th class="py-4 px-6 font-semibold w-12 text-center">#</th>
+                                            <th class="py-4 px-6 font-semibold text-left">Course Title</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-32">Credits</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Theory</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Lab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">1</td><td>Computer Organization & Assembly Language</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">2</td><td>Multivariable Calculus</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">3</td><td>Data Structures</td><td class="text-center">4</td><td class="text-center">3</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">4</td><td>Web Technologies</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">5</td><td>Artificial Intelligence</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">6</td><td>Information Security</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 5 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">5</span> 
+                                    Fifth Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    16 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                            <th class="py-4 px-6 font-semibold w-12 text-center">#</th>
+                                            <th class="py-4 px-6 font-semibold text-left">Course Title</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-32">Credits</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Theory</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Lab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">1</td><td>Technical & Business Writing</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">2</td><td>Computer Architecture</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">3</td><td>Operating Systems</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">4</td><td>Numerical Analysis</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">5</td><td>Cyber Security</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">6</td><td>Theory of Automata</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 6 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">6</span> 
+                                    Sixth Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    16 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                            <th class="py-4 px-6 font-semibold w-12 text-center">#</th>
+                                            <th class="py-4 px-6 font-semibold text-left">Course Title</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-32">Credits</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Theory</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Lab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">1</td><td>Analysis of Algorithms</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">2</td><td>Compiler Construction</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">3</td><td>Advance Database Management Systems</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">4</td><td>HCI & Computer Graphics</td><td class="text-center">3</td><td class="text-center">2</td><td class="text-center">1</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">5</td><td>Introduction to Management</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">6</td><td>Domain Elective – I</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 7 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start sm:items-center text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">7</span> 
+                                    Seventh Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full tracking-wider border border-white/20 shadow-inner">
+                                    15 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                            <th class="py-4 px-6 font-semibold w-12 text-center">#</th>
+                                            <th class="py-4 px-6 font-semibold text-left">Course Title</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-32">Credits</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Theory</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Lab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">1</td><td>Final Year Project – I</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">2</td><td>Parallel & Distributed Computing</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">3</td><td>Financial Accounting</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">4</td><td>Balochi Language</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">5</td><td>Domain Elective – II</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">6</td><td>Domain Elective – III</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Semester 8 -->
+                        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300">
+                            <div class="bg-gradient-to-r from-brand-darkTeal to-brand-teal p-6 flex justify-between items-start  text-white gap-4">
+                                <h3 class="font-serif text-xl font-bold flex items-center gap-3">
+                                    <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">8</span> 
+                                    Eighth Semester
+                                </h3>
+                                <span class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full uppercase tracking-wider border border-white/20 shadow-inner">
+                                    12 Credit Hours
+                                </span>
+                            </div>
+                            <div class="p-0 overflow-x-auto pb-6">
+                                <table class="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr class="bg-gray-50/80 text-gray-500 text-xs uppercase tracking-widest border-b border-gray-100">
+                                            <th class="py-4 px-6 font-semibold w-12 text-center">#</th>
+                                            <th class="py-4 px-6 font-semibold text-left">Course Title</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-32">Credits</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Theory</th>
+                                            <th class="py-4 px-6 font-semibold text-center w-24">Lab</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-700">
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">1</td><td>Final Year Project – II</td><td class="text-center">4</td><td class="text-center">4</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">2</td><td>Entrepreneurship</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">3</td><td>Professional Practices</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                        <tr class="border-b border-gray-50"><td class="py-4 px-6 text-center">4</td><td>Civics and Community Engagement</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">0</td></tr>
+                                        <tr><td class="py-4 px-6 text-center">5</td><td>Domain Elective – IV</td><td class="text-center">3</td><td class="text-center">3</td><td class="text-center">0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Detailed Fee Breakdown Section -->
+            <section id="bs-program" class="scroll-mt-32 border-t border-gray-200 pt-16 mt-20">
+                <div class="text-center mb-12">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3 block">Financial Details</span>
+                    <h2 class="text-4xl font-serif text-brand-darkTeal mb-4">Detailed Fee Structure</h2>
+                    <p class="text-xl text-gray-500 font-light">Complete breakdown of BS Computer Science fees</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-12">
+
+                    <!-- 1st Semester Fee -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5 flex">
+                            <span class="bg-brand-gold text-brand-darkTeal w-8 h-8 rounded-full flex items-center justify-center text-sm">1st</span> 
+                            <h3 class="text-xl font-bold pl-2">Semester Fee Structure</h3>
+                        </div>
+                        <table class="w-full text-left">
+                            <tbody class="text-gray-700">
+                                <tr class="border-b"><td class="p-4">Admission Fee (One time)</td><td class="p-4 text-right">2,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Registration Fee (One time)</td><td class="p-4 text-right">1,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Tuition Fee</td><td class="p-4 text-right">11,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Library Fee</td><td class="p-4 text-right">500</td></tr>
+                                <tr class="border-b"><td class="p-4">Security Fee (Refundable)</td><td class="p-4 text-right">1,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Lab Fee</td><td class="p-4 text-right">2,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Computer Lab Fee</td><td class="p-4 text-right">500</td></tr>
+                                <tr class="border-b"><td class="p-4">Sports Fee</td><td class="p-4 text-right">500</td></tr>
+                                <tr class="border-b"><td class="p-4">Examination Fee</td><td class="p-4 text-right">1,000</td></tr>
+                                <tr class="border-b"><td class="p-4">ID Card</td><td class="p-4 text-right">300</td></tr>
+                                <tr class="bg-brand-sand font-bold">
+                                    <td class="p-4">Total</td>
+                                    <td class="p-4 text-right">19,800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 2nd–8th Semester -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-12">
+                        <div class="bg-brand-darkTeal text-white p-5 flex">
+                            <span class="bg-brand-gold text-brand-darkTeal w-14 h-11 rounded-2xl flex items-center justify-center text-sm">2nd–8th</span> 
+                            <h3 class="text-xl font-bold p-2">Semester Fee</h3>
+                        </div>
+                        <table class="w-full text-left">
+                            <tbody class="text-gray-700">
+                                <tr class="border-b"><td class="p-4">Tuition Fee</td><td class="p-4 text-right">11,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Library Fee</td><td class="p-4 text-right">500</td></tr>
+                                <tr class="border-b"><td class="p-4">Lab Fee</td><td class="p-4 text-right">2,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Computer Lab Fee</td><td class="p-4 text-right">500</td></tr>
+                                <tr class="border-b"><td class="p-4">Sports Fee</td><td class="p-4 text-right">500</td></tr>
+                                <tr class="border-b"><td class="p-4">Examination Fee</td><td class="p-4 text-right">1,000</td></tr>
+                                <tr class="bg-brand-sand font-bold">
+                                    <td class="p-4">Total Per Semester</td>
+                                    <td class="p-4 text-right">15,500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>   
+
+                    <!-- Transport -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-12">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Transport Fee</h3>
+                        </div>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b"><td class="p-4">Long Route</td><td class="p-4 text-right">4,000</td></tr>
+                                <tr><td class="p-4">Short Route</td><td class="p-4 text-right">3,500</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Hostel -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-12">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Hostel Fee</h3>
+                        </div>
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b"><td class="p-4">Admission Fee (One time)</td><td class="p-4 text-right">1,000</td></tr>
+                                <tr><td class="p-4">Hostel Rent (Per Semester)</td><td class="p-4 text-right">2,500</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Examination -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="bg-brand-darkTeal text-white p-5">
+                            <h3 class="text-xl font-bold">Examination & Misc Charges</h3>
+                        </div>
+                        <table class="w-full">
+                            <tbody>
+                                <tr class="border-b"><td class="p-4">DMC</td><td class="p-4 text-right">200</td></tr>
+                                <tr class="border-b"><td class="p-4">Transcript</td><td class="p-4 text-right">500 / 1000</td></tr>
+                                <tr class="border-b"><td class="p-4">Degree</td><td class="p-4 text-right">2000 - 6000</td></tr>
+                                <tr class="border-b"><td class="p-4">Verification</td><td class="p-4 text-right">500 / 800</td></tr>
+                                <tr class="border-b"><td class="p-4">Rechecking</td><td class="p-4 text-right">1,000</td></tr>
+                                <tr class="border-b"><td class="p-4">Registration</td><td class="p-4 text-right">1,500</td></tr>
+                                <tr class="border-b"><td class="p-4">Repeat / Improvement</td><td class="p-4 text-right">2,000</td></tr>
+                                <tr><td class="p-4">Re-admission / Freeze</td><td class="p-4 text-right">1,000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (Dark Mode) -->
+    <footer id="footer"></footer>
+    <script src="../../Assets/main.js"></script>
+</body>
+</html>

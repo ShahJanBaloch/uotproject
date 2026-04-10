@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Reg - University of Turbat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/uotlogo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',
+                            darkTeal: '#093642',
+                            gold: '#E0B354',
+                            red: '#9A031E',
+                            sand: '#F5F5F4',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-gray-900 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Geometric Pattern Background (Fixed) -->
+    <div class="fixed inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230F4C5C\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Navigation and Mobile Menu overlay  -->
+    <nav id="navbar"></nav>
+    <div class="mobileMenu"></div>
+
+    <!-- Hero Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-6 md:px-12">
+    
+        <!-- Title -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl mt-[60px] md:text-5xl font-bold text-brand-gold mb-4">
+                 Student Grievance Registration form
+            </h1>
+    
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                The University of Turbat is committed to providing a supportive and
+                transparent environment for students. If you have any concerns or
+                complaints regarding academic, administrative, or campus services,
+                you can submit your grievance through the official system.
+            </p>
+        </div>
+    
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+            <!-- Academic Issue -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition text-center">
+                <div class="w-14 h-14 mx-auto bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-5">
+                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                </div>
+        
+                <h3 class="font-bold text-lg text-brand-teal mb-2">
+                    Academic Issues
+                </h3>
+        
+                <p class="text-sm text-gray-500">
+                    Concerns related to courses, grades, attendance, examinations,
+                    or faculty matters.
+                </p>
+            </div>
+    
+            <!-- Administrative -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition text-center">
+                <div class="w-14 h-14 mx-auto bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-5">
+                    <i data-lucide="building" class="w-6 h-6"></i>
+                </div>
+        
+                <h3 class="font-bold text-lg text-brand-teal mb-2">
+                    Administrative Issues
+                </h3>
+        
+                <p class="text-sm text-gray-500">
+                    Complaints regarding admissions, registration, documentation,
+                    or administrative services.
+                </p>
+            </div>
+    
+            <!-- Facilities -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition text-center">
+                <div class="w-14 h-14 mx-auto bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-5">
+                    <i data-lucide="home" class="w-6 h-6"></i>
+                </div>
+        
+                <h3 class="font-bold text-lg text-brand-teal mb-2">
+                    Campus Facilities
+                </h3>
+        
+                <p class="text-sm text-gray-500">
+                    Issues related to hostel, transport, classrooms, labs,
+                    library, or campus infrastructure.
+                </p>
+            </div>
+    
+            <!-- Other -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition text-center">
+                <div class="w-14 h-14 mx-auto bg-brand-sand rounded-full flex items-center justify-center text-brand-gold mb-5">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                </div>
+        
+                <h3 class="font-bold text-lg text-brand-teal mb-2">
+                    Other Complaints
+                </h3>
+        
+                <p class="text-sm text-gray-500">
+                    Any other concern or issue that affects your academic
+                    experience at the university.
+                </p>
+            </div>
+    
+        </div>
+
+    
+        </div>
+    </section>
+
+    <!-- Complaint Form Section -->
+    <section id="form" class="py-20 bg-stand-steal">
+        <div class="container mx-auto px-6 md:px-12">
+    
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+            <h2 class="text-2xl md:text-4xl font-bold text-brand-teal mb-4">
+                 Submit Your Complaint
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                Please fill out the form below to register your grievance. Your
+                complaint will be reviewed by the concerned department and necessary
+                action will be taken.
+            </p>
+        </div>
+    
+        <!-- Form Card -->
+        <div class="max-w-4xl mx-auto bg-brand-darkTeal p-10 rounded-3xl border border-gray-300 hover:shadow-lg border border-gray-100">
+    
+            <form class="grid md:grid-cols-2 gap-6">
+    
+                <!-- Student Name -->
+                <div>
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                        Student Name
+                    </label>
+                    <input type="text" placeholder="Enter your full name"
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                </div>
+        
+                <!-- Registration Number -->
+                <div>
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                    Registration Number
+                    </label>
+                    <input type="text" placeholder="e.g., UOT-2023-001"
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                </div>
+        
+                <!-- Department -->
+                <div>
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                    Department
+                    </label>
+                    <input type="text" placeholder="Enter your department"
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                </div>
+        
+                <!-- Email -->
+                <div>
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                        Email Address
+                    </label>
+                    <input type="email" placeholder="example@email.com"
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                </div>
+        
+                <!-- Complaint Category -->
+                <div class="md:col-span-2">
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                    Complaint Category
+                    </label>
+                    <select
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                    <option>Select Category</option>
+                    <option>Academic Issues</option>
+                    <option>Administrative Issues</option>
+                    <option>Campus Facilities</option>
+                    <option>Hostel Issues</option>
+                    <option>Transportation</option>
+                    <option>Other</option>
+                    </select>
+                </div>
+        
+                <!-- Complaint Description -->
+                <div class="md:col-span-2">
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                    Complaint Details
+                    </label>
+                    <textarea rows="5" placeholder="Describe your complaint..."
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold"></textarea>
+                </div>
+        
+                <!-- File Upload -->
+                <div class="md:col-span-2">
+                    <label class="text-sm font-semibold text-brand-white block mb-2">
+                    Attach complaint File (Optional)
+                    </label>
+                    <input type="file"
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 bg-white focus:outline-none">
+                </div>
+        
+                <!-- Submit Button -->
+                <div class="md:col-span-2 text-center mt-4">
+                    <button type="submit"
+                    class="bg-brand-teal hover:bg-teal-800 text-white font-bold px-6 md:px-10 py-4 rounded-full shadow-lg transition inline-flex items-center gap-2">
+                        Submit Complaint
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </form>
+    
+        </div>
+        </div>
+    </section> 
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="Assets/main.js"></script>
+</body>
+</html>
