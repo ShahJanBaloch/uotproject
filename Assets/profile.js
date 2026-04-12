@@ -1,18 +1,22 @@
+console.log("Top check");
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("inside DOM");
     const params = new URLSearchParams(window.location.search);
+    console.log("After params")
     const id = params.get("id");
-
+    console.log("check ID:",id);
     if (!id) {
         showError("No profile ID specified.");
         return;
-    }
+    };
 
     // Relative path to faculty.json
     fetch('../../Assets/data/faculty.json')
         .then(res => {
+            console.log("res",res);
             if (!res.ok) throw new Error("Failed to load faculty data.");
             return res.json();
-            console.log("Error: ",res.json)
+            console.log("Error: ",res)
         })
         .then(data => {
             let found = null;
