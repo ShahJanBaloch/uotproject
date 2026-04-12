@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => {
             if (!res.ok) throw new Error("Failed to load faculty data.");
             return res.json();
+            console.log("Error: ",res.json)
         })
         .then(data => {
             let found = null;
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Find the faculty member across all departments
             for (let dept in data.departments) {
+                console.log("Faculty data",data);
                 const prof = data.departments[dept].faculty.find(p => p.id === id);
                 if (prof) {
                     found = prof;
