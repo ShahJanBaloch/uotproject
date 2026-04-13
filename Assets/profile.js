@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Relative path to faculty.json
-    fetch('../../Assets/data/faculty.json')
+    fetch('https://shahjanbaloch.github.io/uotproject/Assets/data/faculty.json')
         .then(res => {
             console.log("res",res);
             if (!res.ok) throw new Error("Failed to load faculty data.");
